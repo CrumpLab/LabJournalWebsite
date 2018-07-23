@@ -1,7 +1,7 @@
 # LabJournalWebsite
-An R Markdown website template for a lab journal
+An R Markdown website template for a lab journal [https://crumplab.github.io/LabJournalWebsite/index.html](https://crumplab.github.io/LabJournalWebsite/index.html)
 
-To use this, click the download as .zip button.
+To use this, click the download as .zip button to start from a local computer, or skip down to the github example to fork this and get started that way.
 
 The unzipped folder contains all of the files you need to compile a website in R Markdown. This should all work fine if you have the latest version of R and R-studio installed.
 
@@ -17,7 +17,7 @@ Important: After compilation, all of the files for displaying your website are s
 
 ## Steps for serving your webpage using github pages.
 
-This is the source code repository for making the webpage in R-studio. At the same time, the resulting website is being served from this repository at this link [add link]().
+This is the source code repository for making the webpage in R-studio. At the same time, the resulting website is being served from this repository at this link [https://crumplab.github.io/LabJournalWebsite/index.html](https://crumplab.github.io/LabJournalWebsite/index.html).
 
 Every github repository has the capability of serving html files (web page files) contained in the repository, this is called github pages. How this works depends a little bit on the specific repository you are using. For this repository. The webpage is served from the docs folder. The example files are set so that when you compile the example in R-studio, the output automatically goes into the docs folder. As a result, when you have these files in a github repository, github will serve the html files in your docs folder as a website.
 
