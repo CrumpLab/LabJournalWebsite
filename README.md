@@ -8,6 +8,7 @@ The unzipped folder contains all of the files you need to compile a website in R
 ## Steps for compiling on your local computer
 
 1. Make sure R and R-studio are installed
+3. Make sure the rmarkdown package is installed in R-studio. Open R-studio, click the packages tab in the lower left hand corner, click install packages, type in rmarkdown, make sure "install dependencies" is clicked on, then press install. Close R-studio.
 2. Navigate to the folder you just downloaded, open the 'LabJournalWebsite.Proj' file. This should automatically open R-studio, and your current working environment will be inside this project. That means everything you save will be auto saved to this folder (unless you tell R-studio to save something somewhere else.
 3. Inside R-studio you should see a files tab in the bottom right hand corner. Most files you click will be opened up as text files in the R-studio editor. Click the "Index.Rmd" file.
 4. To compile the entire website, find the build tab in the top right hand corner. You should see the option to "build website". Click this. The website should be built.
