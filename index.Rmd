@@ -1,15 +1,27 @@
 ---
-title: "MyLabJournal"
+title: "Utsab"
 output: html_document
 ---
 
 <style type="text/css">
 .title {
   display: none;
+  font-family: Helvetica;
+  
 }
 
 #getting-started img {
   margin-right: 10px;
+}
+
+h1 { 
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Helvetica;
 }
 
 </style>
@@ -17,11 +29,10 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **Utsab Shrestha**
 
-I am a proactive and fast learning individual with strong analytical and quantitaive skills seeking to work in dynamic data analytics role that utilizes analytical and methodical skills and relevant expertise to help the company achieve business goals while sticking to company's vision, mission and values.
+<b>Hi! I am Utsab. I am a proactive and fast learning individual with strong analytical and quantitaive skills. I am currently looking to work in dynamic data analytics role where I can utilize my relevant expertise to help the company achieve business goals while sticking to company's vision, mission and values.</b>
 
-## Background
+<h1>BACKGROUND</h1>
 
 I have spent the past 5 years doing number crunching, database management, business analysis, and I am keen to continue developing my career in the field of data analytics. I have always been a numbers person, with exceptional mathematics and computer skills. I am fluent in several data management systems and software, including Excel, SQL, Python and Power BI. Statistical significance, A/B testing, and data-driven optimization are the some of the skillsets I possess.
 
@@ -33,8 +44,13 @@ On a personal level, I am detail-oriented, organized, and precise in my work. I 
 
 I have completed my graduate program in Predictive Analytics, and I have bachelor’s degree in computer information systems with business concentration.
 
-### PROJECTS
+<h1>PROJECTS</h1>
+
 1. Study of Interaction Patterns in Primary School Children Network [https://sutsabs.github.io/InteractPattern](https://sutsabs.github.io/InteractPattern)
+
+2. Prediction of West Nile Virus using Multivariate Regression Model
+
+3. Risk assessment of Suicide using Machine Learning
 
 
 
@@ -45,6 +61,6 @@ I have completed my graduate program in Predictive Analytics, and I have bachelo
 
 
 <a href = "https://github.com/sutsabs">
-![](images/utsab_profile.jpg)
+![](images/profile.png)
 </a>
 </div>
