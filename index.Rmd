@@ -34,7 +34,7 @@ h1 {
 
 <h1>BACKGROUND</h1>
 
-I have spent the past 5 years doing number crunching, database management, business analysis, and I am keen to continue developing my career in the field of data analytics. I have always been a numbers person, with exceptional mathematics and computer skills. I am fluent in several data management systems and software, including Excel, SQL, Python and Power BI. Statistical significance, A/B testing, and data-driven optimization are the some of the skillsets I possess.
+I have spent the past 5 years doing number crunching, database management, business analysis, creating data reports and I am keen to continue developing my career in the field of data analytics. I have always been a numbers person, with exceptional mathematics and computer skills. I am fluent in several data management systems and software, including Excel, Microsoft SQL Server, Python, R and Power BI. Statistical significance, A/B testing, and data-driven optimization are some of the areas of my expertise.
 
 As much as I’m into data manipulation, it’s the analysis of data that really gets me going. I like to explore the relationships between data and translate digits and spreadsheets into stories. In the age of big data, these stories become actionable solutions and strategies for businesses, and I take pride in my ability to make data accessible to both executive decision-makers and frontline sales staff.
 
@@ -43,6 +43,8 @@ In my last role, as a business intelligence analyst for an online travel agency,
 On a personal level, I am detail-oriented, organized, and precise in my work. I have strong communication skills with a knack for clear and illuminating presentation. I’m comfortable on my own facing the numbers, but I really enjoy being part of a motivated team of smart people.
 
 I have completed my graduate program in Predictive Analytics, and I have bachelor’s degree in computer information systems with business concentration.
+
+Besides spreadsheets and charts, I am passionate about nature and mountains, and live an active lifestyle.
 
 <h1>PROJECTS</h1>
 
