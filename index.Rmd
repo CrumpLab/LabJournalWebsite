@@ -50,7 +50,7 @@ Besides spreadsheets and charts, I am passionate about nature and mountains, and
 
 1. Study of Interaction Patterns in Primary School Children Network [https://sutsabs.github.io/InteractPattern](https://sutsabs.github.io/InteractPattern)
 
-2. Prediction of West Nile Virus using Multivariate Regression Model
+2. Speed-dating experiment: <a href = "https://sutsabs.github.io/speed-dating/">Secret to get second dates</a>
 
 3. Risk assessment of Suicide using Machine Learning
 
