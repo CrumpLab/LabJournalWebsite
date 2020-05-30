@@ -34,9 +34,9 @@ h1 {
 
 <h1>BACKGROUND</h1>
 
-I have spent the past 5 years doing number crunching, database management, business analysis, creating data reports and I am keen to continue developing my career in the field of data analytics. I have always been a numbers person, with exceptional mathematics and computer skills. I am fluent in several data management systems and software, including Excel, Microsoft SQL Server, Python, R and Power BI. Statistical significance, A/B testing, and data-driven optimization are some of the areas of my expertise.
+I have always been a numbers person, with exceptional mathemathis and computer skills. I have spent the past 5 years analyzing complex business requirements, compiling market and trend data, and designing enterprise-level solutions to accelerate efficiency and revenue growth. I am fluent in several data management systems and software, including Excel, Microsoft SQL Server, Python, R and Power BI. Statistical significance, A/B testing, and data-driven optimization are some of the areas of my expertise.
 
-As much as I’m into data manipulation, it’s the analysis of data that really gets me going. I like to explore the relationships between data and translate digits and spreadsheets into stories. In the age of big data, these stories become actionable solutions and strategies for businesses, and I take pride in my ability to make data accessible to both executive decision-makers and frontline sales staff.
+As much as I’m into data manipulation, it’s the analysis of data that really gets me going. I enjoy exploring the relationships between data and translating those data into stories. In the age of big data, these stories become actionable solutions and strategies for businesses, and I take pride in my ability to make data accessible to both executive decision-makers and frontline sales staff.
 
 In my last role, as a business intelligence analyst for an online travel agency, I worked with cross-functional teams to structure problems, identify appropriate data sources, extract data and develop integrated information delivery solutions. I was leading the analysis on pricing opportunities, customer behavior, and competitive positioning to build a long-term pricing strategy for the firm.  
 
@@ -46,13 +46,15 @@ I have completed my graduate program in Predictive Analytics, and I have bachelo
 
 Besides spreadsheets and charts, I am passionate about nature and mountains, and live an active lifestyle.
 
+---
+
 <h1>PROJECTS</h1>
 
-1. Study of Interaction Patterns in Primary School Children Network [https://sutsabs.github.io/InteractPattern](https://sutsabs.github.io/InteractPattern)
+  1. <a href = "https://sutsabs.github.io/InteractPattern">Study of Interaction Patterns in Primary School Children Network 
+  
+  2. <a href = "https://sutsabs.github.io/speed-dating/">Dating Compatibiligy and Chemistry: Analysis on a Speed-dating Experiment</a>
 
-2. Speed-dating experiment: <a href = "https://sutsabs.github.io/speed-dating/">Secret to get second dates</a>
-
-3. Risk assessment of Suicide using Machine Learning
+  3. Risk assessment of Suicide using Machine Learning
 
 
 
