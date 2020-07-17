@@ -54,7 +54,7 @@ Besides spreadsheets and charts, I am passionate about nature and mountains, and
   
   2. <a href = "https://sutsabs.github.io/speed-dating/">Dating Compatibiligy and Chemistry: Analysis on a Speed-dating Experiment</a>
 
-  3. Risk assessment of Suicide using Machine Learning
+  3. <a href = "risk.html">Risk assessment of Suicide using Machine Learning
 
 
 
