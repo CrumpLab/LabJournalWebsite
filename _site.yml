@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Journal"
-      href: index.html#Journal.html
-    - text: "Links"
-      href: index.html#Links.html
+#    - text: "Journal"
+#      href: index.html#Journal.html
+#    - text: "Links"
+#      href: index.html#Links.html
 output_dir: "docs"
