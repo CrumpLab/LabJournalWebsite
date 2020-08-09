@@ -1,0 +1,25 @@
+---
+title: "Resources"
+output: html_document
+---
+
+### About
+
+[R]These walkthroughs were created by Aaron Mitchell-Dick.  They are based off of vignettes from source packages (see links to package vignettes/walkthroughs below).  These walkthroughs are intended to aid beginning knowledge in bioinformatics and display commenting on common techniques an advanced user would already know.  In addition to these, there are a lot of other great resources for beginniners that do not necessitate hard lessons in coding. For example [Galaxy](https://galaxyproject.org) is an excellent resource for the entire bioinformatics community, and it's free.  Any questions or commments please email aaron.mitchell.dick@duke.edu.  Enjoy!
+
+### Links to vignettes and repositories mentioned in the walkthroughs on this website:
+
+1. [kallisto](https://pachterlab.github.io/kallisto/)
+2. [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
+3. [DESeq2](http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+4. [TrimGalore](https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md)
+5. [FastQC](https://raw.githubusercontent.com/s-andrews/FastQC/master/INSTALL.txt) and [FastQC website](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
+Other helpful links:
+
+6. [kallisto indices and tarballs containing .gtf files]
+7. [github repo to fork to create your own website like this]
+
+8. The definitive guide for all things R Markdown [https://bookdown.org/yihui/rmarkdown/](https://bookdown.org/yihui/rmarkdown/)
+
+This website was created by forking the [original project from Matt Crump](https://github.com/CrumpLab/LabJournalWebsite) and the instructional [YouTube video to set up your own webpage](https://www.youtube.com/watch?v=nc7XhQrasCM). 
