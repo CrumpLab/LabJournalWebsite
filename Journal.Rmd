@@ -14,115 +14,167 @@ output:
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
 
-IMPORTANT: You can delete everything in here and start fresh. You might want to start by not deleting anything above this line until you know what that stuff is doing.
+# Assignment 1
 
+**Collaborators: w/ Sophia Restaino **
 
-This is an .Rmd file. It is plain text with special features. Any time you write just like this, it will be compiled to normal text in the website. If you put a \# in front of your text, it will create a top level-header.
+This assignment is due on Canvas on Monday 9/20 before class, at 10:15 am. Include the name of anyone with whom you collaborated at the top of the assignment.
 
-# My first post
+### Problem 1 
 
-2018 | 7 | 23 Last compiled: `r Sys.Date()`
-
-Notice that whatever you define as a top level header, automatically gets put into the table of contents bar on the left. 
-
-## Second level header
-
-You can add more headers by adding more hashtags. These won't be put into the table of contents
-
-### third level header
-
-Here's an even lower level header
-
-# My second post (note the order)
-
-2018 | 7 | 23 Last compiled: `r Sys.Date()`
-
-I'm writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom
-
-# Adding R stuff
-
-So far this is just a blog where you can write in plain text and serve your writing to a webpage. One of the main purposes of this lab journal is to record your progress learning R. The reason I am asking you to use this process is because you can both make a website, and a lab journal, and learn R all in R-studio. This makes everything really convenient and in the sam place. 
-
-So, let's say you are learning how to make a histogram in R. For example, maybe you want to sample 100 numbers from a normal distribution with mean = 0, and standard deviation =1, and then you want to plot a histogram. You can do this right here by using an r code block, like this:
+Install the datasets package on the console below using `install.packages("datasets")`. Now load the library.
 
 ```{r}
-samples <- rnorm(100, mean=0, sd=1)
-hist(samples)
+library(datasets)
 ```
 
-When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block.
-
-# The big idea
-
-Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I've placed some helpful starting links in the links page on this website
-
-# What can you do right now by yourself?
-
-It's hard to learn programming when you don't have specific problems that you are trying to solve. Everything just seems abstract.
-
-I wrote an [introductory programming book that introduces R](https://crumplab.github.io/programmingforpsych/), and gives some [concrete problems for you to solve](https://crumplab.github.io/programmingforpsych/programming-challenges-i-learning-the-fundamentals.html). 
-
-To get the hang of journaling and solving the problems to learn programming, my suggestion is that you use this .Rmd file to solve the problems. It would look like this:
-
-# Problem 1
-
-Do simple math with numbers, addition, subtraction, multiplication, division
+Load the USArrests dataset and rename it `dat`. Note that this dataset comes with R, in the package datasets, so there's no need to load data from your computer. Why is it useful to rename the dataset?
 
 ```{r}
-1+2
-2*5
-5/3
-(1+6+4)/5
-
+dat <- USArrests
+dat.untouched <- dat
 ```
 
-# Problem 2
+It is useful to rename the dataset so that you are able to keep track of your own datasets that you will be working with on your project. When working with many datasets, it might get confusing regarding which version of the data you are using (ie. if there is any manipulation to the data involved). Best practices involve making an untouched version so you can relook at the original data. 
 
-Put numbers into variables, do simple math on the variables
+### Problem 2
+
+Use this command to make the state names into a new variable called State. 
+
+```{r, eval=FALSE}
+dat$state <- tolower(rownames(USArrests))
+```
+
+This dataset has the state names as row names, so we just want to make them into a new variable. We also make them all lower case, because that will help us draw a map later - the map function requires the states to be lower case.
+
+List the variables contained in the dataset `USArrests`.
 
 ```{r}
-a<-1
-b<-2
-a+b
-
-d<-c(1,2,3)
-e<-c(5,6,7)
-d+e
-d*e
-d/e
-
+colnames(dat)
 ```
 
-# Problem 3
+### Problem 3 
 
-Write code that will place the numbers 1 to 100 separately into a variable using for loop. Then, again using the seq function.
+What type of variable (from the DVB chapter) is `Murder`?
+```{r}
+?USArrests
+```
+
+Answer: Murder is a quantitative variable because it is a numerical value with units. It measures the number of murder arrests in each state (per 100,000) in 1973.
+
+What R Type of variable is it?
+```{r}
+class(dat$Murder)
+```
+
+Answer: The R type of variable is "numeric" as shown by the output of the code above. 
+
+### Problem 4
+
+What information is contained in this dataset, in general? What do the numbers mean? 
+
+Answer: This dataset is looking at the types of arrests in 1973 per 100,000 people in the 50 states. There are 50 rows (the states) and 4 main variables we are looking at, including murder, assault, urban population percentages, and rape arrests. 
+
+### Problem 5
+
+Draw a histogram of `Murder` with proper labels and title.
 
 ```{r}
-# for loop solution
-# i becomes the number 1 to 100 at each step of the loop
-
-
-a <- length(100) # make empty variable, set length to 100
-for (i in 1:100){
-  a[i] <-i #assigns the number in i, to the ith index of a
-}
-
-print(a)
-
-# for loop solution #2
-
-a<-c() #create empty variable using combine command
-for (i in 1:100){
-  a<-c(a,i) # keeps combining a with itself and the new number in i
-}
-print(a)
-
-# seq solution
-a <- seq(1,100,1) # look up help for seq using ?seq() in console
-print(a)
-
+hist(dat$Murder,
+     main = "Histogram of Murders",
+     xlab = "Number of Murders",
+     ylab = "Frequency",
+     xlim = c(0,20),
+     ylim = c(0,15))
 ```
 
-# Replace this with problem 4
+### Problem 6
 
-And keep going. Try to solve the problems with different scripts that provide the same solution. Good luck, Happy coding.
+Please summarize `Murder` quantitatively. What are its mean and median? What is the difference between mean and median? What is a quartile, and why do you think R gives you the 1st Qu. and 3rd Qu.?
+
+```{r}
+mean(dat$Murder)
+median(dat$Murder)
+summary(dat$Murder)
+```
+
+The mean shows the average amount of murders per 100,000 residents for each state. The median reports the number for the state that is in the middle of the other numbers in the dataset. Between the 1st quartile, median, 3rd quartile, and the max, we are able to see enough of the the data distribution that we need. 1st quartile shows that 25% of the state's numbers reported are below 4.075 and the 3rd quartile shows that the 50.1%-75% are between 7.25-11.25. 
+
+### Problem 7
+
+Repeat the same steps you followed for `Murder`, for the variables `Assault` and `Rape`. Now plot all three histograms together. You can do this by using the command `par(mfrow=c(3,1))` and then plotting each of the three. 
+
+```{r, echo = TRUE, fig.width = 5, fig.height = 8}
+max(dat$Assault)
+hist(dat$Assault,
+     main = "Histogram of Assault",
+     xlab = "Number of Assaults",
+     ylab = "Frequency",
+     xlim = c(0,350),
+     ylim = c(0,12))
+```
+
+```{r}
+max(dat$Rape)
+hist(dat$Rape,
+     main = "Histogram of Rape",
+     xlab = "Number of Rapes",
+     ylab = "Frequency",
+     xlim = c(0,50),
+     ylim = c(0,12))
+```
+
+What does the command par do, in your own words (you can look this up by asking R `?par`)?
+```{r}
+?par
+```
+
+Answer: Par allows you to set graphical parameters. An example of using par can be seen below in which I used par to put graphs together to be seen side by side. You can use it to put, for example, 3 side by side or 3 on top of each other. 
+
+What can you learn from plotting the histograms together?
+```{r}
+par(mfrow=c(3,1))
+
+hist(dat$Murder,
+     main = "Histogram of Murders",
+     xlab = "Number of Murders",
+     ylab = "Frequency",
+     xlim = c(0,20),
+     ylim = c(0,15))
+
+hist(dat$Assault,
+     main = "Histogram of Assault",
+     xlab = "Number of Assaults",
+     ylab = "Frequency",
+     xlim = c(0,350),
+     ylim = c(0,12))
+
+hist(dat$Rape,
+     main = "Histogram of Rape",
+     xlab = "Number of Rapes",
+     ylab = "Frequency",
+     xlim = c(0,50),
+     ylim = c(0,12))
+```
+
+Answer: You are able to compare the frequencies of the assaults, murders, and rape all togehter at once. It is an easy way to display the data. 
+  
+### Problem 8
+
+In the console below (not in text), type `install.packages("maps")` and press Enter, and then type `install.packages("ggplot2")` and press Enter. This will install the packages so you can load the libraries.
+
+Run this code:
+
+```{r, eval = FALSE, fig.width = 7.5, fig.height = 4}
+library('maps') 
+library('ggplot2') 
+
+ggplot(dat,
+       aes(map_id=state, fill=Murder)) + 
+       geom_map(map=map_data("state")) + 
+       expand_limits(x=map_data("state")$long, y=map_data("state")$lat)
+```
+
+What does this code do? Explain what each line is doing.
+
+Answer: We are making a map with the murder data, plotting the different murder rates across each state. The first line of this code is calling the maps package. The second line calls the ggplot2 package which allows you to make different kinds of graphs, similar to baseR plot functions. So, when making the map, "ggplot" is the function, "dat" is the dataset we are pulling information from, and "aes" is responsible for setting the aesthetics of the map we are making. "fill" is telling R that we want the aesthetics to be filled with the data from the "Murder" column. After this, the "+" tacks on the map that is actually being made, using the "state" data. After this, "expand_limits" helps us put the latitude and longitude ticks on the visualization, behind the map. 
