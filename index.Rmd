@@ -3,6 +3,9 @@ title: "MyLabJournal"
 output: html_document
 ---
 
+---
+add a comment and tell us what exactly each page going to show and their working so anyone can easily get know about your project
+---
 <style type="text/css">
 .title {
   display: none;
