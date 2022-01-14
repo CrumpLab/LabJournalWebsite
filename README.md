@@ -24,7 +24,7 @@ Every github repository has the capability of serving html files (web page files
 
 **Steps**
 
-1. For this repo to your github (press the fork button in top right hand corner, then choose your github account)
+1. Fork this repo to your github (press the fork button in top right hand corner, then choose your github account)
 2. You should now see a copy of this repo in your github account
 3. Click the Settings (also near top right), scroll down to Github Pages options
 4. click the optino to serve from docs folder
