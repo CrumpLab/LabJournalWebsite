@@ -1,11 +1,11 @@
 name: "MyLabJournal"
 navbar:
-  title: "MyLabJournal"
+  title: "UTSAB SHRESTHA"
   left:
     - text: "Home"
       href: index.html
-    - text: "Journal"
-      href: Journal.html
-    - text: "Links"
-      href: Links.html
+#    - text: "Journal"
+#      href: index.html#Journal.html
+#    - text: "Links"
+#      href: index.html#Links.html
 output_dir: "docs"
