@@ -1,5 +1,5 @@
 # LabJournalWebsite
-An R Markdown website template for a lab journal [https://crumplab.github.io/LabJournalWebsite/index.html](https://crumplab.github.io/LabJournalWebsite/index.html)
+
 
 To use this, click the download as .zip button to start from a local computer, or skip down to the github example to fork this and get started that way.
 
