@@ -1,5 +1,5 @@
 ---
-title: "Data-Driven Economics"
+title: "DATA-DRIVEN ECONOMICS"
 output: html_document
 ---
 
@@ -19,25 +19,25 @@ output: html_document
 
 # **Data-driven Economics**
 
-Hello, my name is Osmar Bolivar and I am an economist who specializes in econometrics and the application of Machine Learning algorithms to economic analysis. As the creator of this website, my goal is to share empirical evidence and technical inputs for further analysis and discussion of structural and conjuncture issues related to Bolivia's economy as well as other countries or regions of the world. It is my hope that the content will not only be useful for academic analysis, but also for data-driven policy design and decision-making.
+Hello, my name is Osmar Bolivar and I am an economist who specializes in econometrics and the application of *Machine Learning* algorithms to economic analysis. As the creator of this website, my goal is to share empirical evidence and technical inputs for further analysis and discussion of structural and conjuncture issues related to Bolivia's economy as well as other countries or regions of the world. It is my hope that the content will not only be useful for academic analysis, but also for data-driven policy design and decision-making.
 
-In case you require feedback, contact information, or further information, please find the necessary links below.
+In case you require feedback or further information, please feel free to contact me.
 
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
+![](images/whatsapp-logo-png-2261.png){width="5%"} (+591) 69900027  
 
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
+![](images/logo-gmail-9952.png){width="5%"} osmar.jsmpf@gmail.com  
 
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
+![](images/linkedin-logo-png-1853.png){width="5%"} https://www.linkedin.com/in/osmar-bolivar-rosales-00a51761/  
 
-4. Change everything to make it your own.
+![](images/512x512-logo-27148.png){width="5%"} https://github.com/osmarbolivar  
+
+
 
 
 </div>
 <div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
-
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
+<a href = "https://https://osmarbolivar.github.io/Data-Driven-Economics/">
+![](images/binary_cloud.jpg){width="300%"}
 </a>
 </div>

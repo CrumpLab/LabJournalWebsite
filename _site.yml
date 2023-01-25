@@ -4,8 +4,16 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Journal"
+    - text: "Papers"
       href: Journal.html
     - text: "Links"
       href: Links.html
 output_dir: "docs"
+
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
