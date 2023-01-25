@@ -1,5 +1,5 @@
 ---
-title: "MyLabJournal"
+title: "Data-Driven Economics"
 output: html_document
 ---
 
@@ -17,11 +17,11 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **My Lab Journal**
+# **Data-driven Economics**
 
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
+Hello, my name is Osmar Bolivar and I am an economist who specializes in econometrics and the application of Machine Learning algorithms to economic analysis. As the creator of this website, my goal is to share empirical evidence and technical inputs for further analysis and discussion of structural and conjuncture issues related to Bolivia's economy as well as other countries or regions of the world. It is my hope that the content will not only be useful for academic analysis, but also for data-driven policy design and decision-making.
 
-## How to use
+In case you require feedback, contact information, or further information, please find the necessary links below.
 
 1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
 

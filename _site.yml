@@ -1,6 +1,6 @@
-name: "MyLabJournal"
+name: "Data-Driven Economics"
 navbar:
-  title: "MyLabJournal"
+  title: "Data-Driven Economics"
   left:
     - text: "Home"
       href: index.html
