@@ -1,19 +1,26 @@
 ---
-title: "Resources"
+title: "Papers"
 output: html_document
 ---
 
-### R and R-Studio
+1. Bolivar, O. (2023). "Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur". The paper won 1st place in the call for papers of the 15th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia, and it will be published in the following version of the journal “Revista de Análisis del Banco Central de Bolivia”.
+2. Bolivar, O. (2022). "Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure". Research Department Working Papers 1910, CAF - Development Bank of Latin America.[**Link**](https://scioteca.caf.com/handle/123456789/1910)
+3. Bolivar, O. (2021). “Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos”. Cuadernos de Investigación Económica Boliviana, 4(2): 53-95. [**Link**](https://repositorio.economiayfinanzas.gob.bo/documentos/2018/UAEF/CIEB/ii_Art%C3%ADculos/Volumen%20IV/Numero%202/V4N2_Paper2.pdf.pdf)
+4. Bolivar, O. (2020). “Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia”. CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+5. Bolivar, O. & Ugarte, D. (2020). “Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población”. CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+6. Ugarte, D. & Bolivar, O. (2019). “Descentralización en Bolivia: eficacia y externalidades”. CAF-INESAD-ABCE (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168). La Paz, Bolivia. [**Link**](http://www.inesad.edu.bo/pdf/wp2018/wp06_2018.pdf)
+7. Bolivar, O. (2017). “Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio”. The paper was presented at the 10th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia. [**Link**](https://eeb.bcb.gob.bo/sites/default/files/programa/Osmar_Bolivar_1310_TC_P1.pdf)
+8. Bolivar, O. (2016). “Bolivianization and Effectiveness of the Monetary Policy”. Cuadernos de Investigación Económica Boliviana, 1(2): 55-98. [**Link**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/ii_Articulos/Volumen_1/Numero_2/Ingles/CIEB_2016_Ing_Paper_2.pdf)
+9. Bolivar, O. & D. Ugarte (2015). “Domestic Demand as Engine of the Economic Growth in Bolivia”. Cuadernos de Investigación Económica Boliviana, 1(1): 7-44. [**Link**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper1_Bolivian_Economic.pdf)
+10. Ugarte, D. & Bolivar, O. (2015). “The Effect of Income Redistribution on Poverty Reduction of Bolivia”. Cuadernos de Investigación Económica Boliviana, 1(1): 45-80. [**Link**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper_2_Bolivian_Economic.pdf)
+11. Ugarte, D. & Bolivar, O. (2015). “La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica”. Revista de Análisis del Banco Central de Bolivia, 22(1): 9-40. [**Link**](https://www.bcb.gob.bo/webdocs/publicacionesbcb/revista_analisis/ra_vol22/articulo_1_v22.pdf)
 
-[R](http://www.r-project.org) is a free open-source programming language that can be used for statistical analysis, data-simulation, graphing, and lots of other stuff. Another free program is [R-studio](http://www.rstudio.com), that provides a nice graphic interface for R. Download R first, then download R-studio. Both can run on PCs, Macs or Linux. Students will be learning R in the stats labs using the lab manual []().
 
-### Additional R resources
+## Additional resources
 
-1. Google is great, Google your problem
-2. [Stackoverflow](https://stackoverflow.com) is great, google will often take you there because someone has already asked your question, and someone else has answered, usually many people have answered your question many ways.
-3. Danielle Navarro wrote a [free Psych Stats textbook using R](https://compcogscisydney.org/learning-statistics-with-r/), it's worth checking out (some of our textbook are based on Danielle's)
-4. I am currently writing another stats textbook (incorporating some of the above). You can read it while it's being made right here [https://crumplab.github.io/statistics/](https://crumplab.github.io/statistics/), also check out the lab manual for more specific things about doing various stats in R (also in draft right now) [https://crumplab.github.io/statisticsLab/](https://crumplab.github.io/statisticsLab/)
-5. Daniell Navarro recently made this website for introducing R, it's great, check it out (also made using this R markdown process): [http://compcogscisydney.org/psyr/](http://compcogscisydney.org/psyr/)
-6. Check out my slightly older programming book that also introduces R [https://crumplab.github.io/programmingforpsych/](https://crumplab.github.io/programmingforpsych/)
-7. This is the definitive guide for all things R Markdown (you will find this very useful as you get better at this skill): [https://bookdown.org/yihui/rmarkdown/](https://bookdown.org/yihui/rmarkdown/)
+![](images/ideaslogo.jpg){width="10%"} [**Link**](https://ideas.repec.org/f/pbo932.html)  
+
+![](images/econpapers.jpg){width="10%"} [**Link**](https://econpapers.repec.org/RAS/pbo932.htm)
+
+
 

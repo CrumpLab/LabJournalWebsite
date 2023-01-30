@@ -5,9 +5,9 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Papers"
-      href: Journal.html
-    - text: "Links"
       href: Links.html
+    - text: "Evidence"
+      href: Journal.html
 output_dir: "docs"
 
 output:
