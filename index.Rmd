@@ -33,11 +33,10 @@ In case you require feedback or further information, please feel free to contact
 
 
 
-
 </div>
 <div class="col-sm-6">
 
 <a href = "https://https://osmarbolivar.github.io/Data-Driven-Economics/">
-![](images/binary_cloud.jpg){width="300%"}
+![](images/life_game.gif){width="200%"}
 </a>
 </div>
