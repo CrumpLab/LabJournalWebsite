@@ -1,6 +1,10 @@
 ---
 title: "Nowcast monthly GDP"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3 
 ---
 
 ```{r setup, include=FALSE}
@@ -8,9 +12,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## <font color="blue">Model Selection Process</font>
+## <font color="blue">Method</font>
 
-I try out **regression methods** such as:
+
+### <font color="blue">Model Selection Process</font>
+
+k-Fold Cross-Validation. I try out **regression methods** such as:
 
 - Linear Regression 
 - Lasso
@@ -24,5 +31,8 @@ I try out **regression methods** such as:
 - Random Forest Regression
 - Extra Trees Regressor
 
+### <font color="blue">Data</font>
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## <font color="blue">Results</font>
