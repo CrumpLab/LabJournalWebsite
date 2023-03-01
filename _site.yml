@@ -7,7 +7,9 @@ navbar:
     - text: "Papers"
       href: Papers.html
     - text: "Evidence"
-      href: Evidence.html
+      menu:
+        - text: "Nowcast GDP"
+          href: NowcastGDP.html
 output_dir: "docs"
 
 output:
