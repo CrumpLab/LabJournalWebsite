@@ -11,28 +11,36 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+In the Bolivian case, as in several developing countries, GDP data or other indicators referring to economic activity suffer from limitations such as lagging in their publication, a low degree of disaggregation, and low frequency. Specifically, although in Bolivia time-series of the quarterly GDP or the monthly Global Index of Economic Activity are available, their publication is usually lagged between three to six months.
+
+As a proposal to overcome these limitations, I have developed a monthly GDP *nowcast* indicator for the Bolivian economy. The terminology of Giannone et al. (2008) and Banbura et al. (2013) is adopted, in regard to the definition of *nowcast*, which is: "*forecasting values of a time series, not published by official sources, for the contemporary period*".[^1]
+
+[^1]: Banbura, M., Giannone, D., Modugno, M. & Reichlin, L. (2013). *Now-casting and the realtime data flow*. Handbook of economic forecasting (pp. 195-237). Elsevier.
+
+    Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
+
+Below, the results of the monthly GDP *nowcast* indicator show that the Bolivian economy would have grown 3.7% by December 2022.
+
+Machine Learning algorithms were applied to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
 
 ## Method
-
 
 ### Model Selection Process
 
 k-Fold Cross-Validation. I try out **regression methods** such as:
 
-- Linear Regression 
-- Lasso
-- ElasticNet Regression
-- Ridge Regression: 
-- K Neighbors Regressor
-- Decision Tree Regressor
-- Simple Vector Regression (SVR)
-- Ada Boost Regressor
-- Gradient Boosting Regressor
-- Random Forest Regression
-- Extra Trees Regressor
+-   Linear Regression
+-   Lasso
+-   ElasticNet Regression
+-   Ridge Regression:
+-   K Neighbors Regressor
+-   Decision Tree Regressor
+-   Simple Vector Regression (SVR)
+-   Ada Boost Regressor
+-   Gradient Boosting Regressor
+-   Random Forest Regression
+-   Extra Trees Regressor
 
 ### Data
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-## Results
