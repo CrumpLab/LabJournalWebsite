@@ -14,6 +14,6 @@ output_dir: "docs"
 
 output:
   html_document:
-    theme: cosmo
+    theme: united
     highlight: textmate
     css: styles.css

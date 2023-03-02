@@ -12,10 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## <font color="blue">Method</font>
+## Method
 
 
-### <font color="blue">Model Selection Process</font>
+### Model Selection Process
 
 k-Fold Cross-Validation. I try out **regression methods** such as:
 
@@ -31,8 +31,8 @@ k-Fold Cross-Validation. I try out **regression methods** such as:
 - Random Forest Regression
 - Extra Trees Regressor
 
-### <font color="blue">Data</font>
+### Data
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-## <font color="blue">Results</font>
+## Results

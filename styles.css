@@ -1,3 +1,85 @@
-blockquote {
-  font-style: italic
+/* Custom styles for navbar */
+.navbar {
+  background-color: #602320;
+  color: white; /* Set text color to white */
+  padding: 1rem; /* Add padding to top and bottom */
 }
+
+
+/* Define custom color palette using CSS variables */
+:root {
+  --primary-color: #a32020; /* dark blue */
+  --secondary-color: #e0301e; /* light gray */
+  --accent-color: #dc6900; /* orange */
+}
+
+/* Style for headings */
+h1 {
+  font-size: 3.5rem; /* Change the font size as per your design */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add some space after the heading */
+  color: var(--primary-color); /* Use primary color */
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--secondary-color); /* Use secondary color */
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--accent-color); /* Use accent color */
+}
+
+/* Style for paragraphs */
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Style for links */
+a {
+  color: #f85959; /* Change the color as per your design */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Other element styles */
+body {
+  font-family: Arial, sans-serif; /* Change the font family as per your design */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px; /* Change the maximum width as per your design */
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Add some padding to the container */
+}
+
+
+/* Custom styles for dropdown menus */
+.dropdown-menu {
+  background-color: #f2f2f2; /* Set background color */
+  color: #333; /* Set text color */
+}
+
+.dropdown-menu a {
+  color: #333; /* Set link color */
+}
+
+.dropdown-menu a:hover {
+  color: #fff; /* Set link color on hover */
+  background-color: #2c3e50; /* Set background color on hover */
+}
+
+
