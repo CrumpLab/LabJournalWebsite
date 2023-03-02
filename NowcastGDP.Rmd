@@ -11,19 +11,21 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In the Bolivian case, as in several developing countries, GDP data or other indicators referring to economic activity suffer from limitations such as lagging in their publication, a low degree of disaggregation, and low frequency. Specifically, although in Bolivia time-series of the quarterly GDP or the monthly Global Index of Economic Activity are available, their publication is usually lagged between three to six months.
+## Results
 
-As a proposal to overcome these limitations, I have developed a monthly GDP *nowcast* indicator for the Bolivian economy. The terminology of Giannone et al. (2008) and Banbura et al. (2013) is adopted, in regard to the definition of *nowcast*, which is: "*forecasting values of a time series, not published by official sources, for the contemporary period*".[^1]
+In the case of Bolivia, as in several developing countries, data on GDP or other indicators of economic activity suffer from limitations such as late publication, a low level of disaggregation and low frequency. Specifically, although time series of quarterly GDP or the monthly Global Index of Economic Activity are available in Bolivia, they are usually published with a delay of between three and six months.
+
+As a proposal to overcome these limitations, I have developed a monthly GDP nowcast indicator for the Bolivian economy. I adopt the terminology of Giannone et al. (2008) and Banbura et al. (2013) regarding the definition of nowcast, which is: "forecast values of a time series, not published by official sources, for the current period".[^1]
 
 [^1]: Banbura, M., Giannone, D., Modugno, M. & Reichlin, L. (2013). *Now-casting and the realtime data flow*. Handbook of economic forecasting (pp. 195-237). Elsevier.
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-Below, the results of the monthly GDP *nowcast* indicator show that the Bolivian economy would have grown 3.7% by December 2022.
+Below, the results of the monthly GDP nowcast indicator show that the Bolivian economy would have grown by 3.7% until December 2022.
 
-Machine Learning algorithms were applied to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
+Machine learning algorithms were used to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
 
-## Method
+## Methodology
 
 ### Model Selection Process
 
