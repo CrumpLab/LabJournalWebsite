@@ -61,6 +61,14 @@ knitr::kable(model_performance, format = "html", table.attr = "style='width:50%;
 knitr::include_graphics("Nowcast/kfold_plot.JPG")
 ```
 
+```{r, echo=FALSE}
+htmltools::includeHTML("Nowcast/validation_plot.html")
+```
+
+
+
+
+
 ### Data
 
 Features used to forecast monthly GDP are.
