@@ -1,5 +1,5 @@
 ---
-title: "Papers"
+title: "Working Papers & Research Articles"
 output: html_document
 ---
 

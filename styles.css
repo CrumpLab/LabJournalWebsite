@@ -1,6 +1,6 @@
 /* Custom styles for navbar */
 .navbar {
-  background-color: #602320;
+  background-color: 	#000000;
   color: white; /* Set text color to white */
   padding: 1rem; /* Add padding to top and bottom */
 }
@@ -8,9 +8,9 @@
 
 /* Define custom color palette using CSS variables */
 :root {
-  --primary-color: #a32020; /* dark blue */
-  --secondary-color: #e0301e; /* light gray */
-  --accent-color: #dc6900; /* orange */
+  --primary-color: #232f3e; /* dark blue */
+  --secondary-color: #146eb4; /* light gray */
+  --accent-color: #ff9900; /* orange */
 }
 
 /* Style for headings */
@@ -44,7 +44,7 @@ p {
 
 /* Style for links */
 a {
-  color: #f85959; /* Change the color as per your design */
+  color: #00bfaf; /* Change the color as per your design */
   text-decoration: none;
 }
 

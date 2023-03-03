@@ -43,6 +43,24 @@ k-Fold Cross-Validation. I try out **regression methods** such as:
 -   Random Forest Regression
 -   Extra Trees Regressor
 
+```{r, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+# Model performance table
+library(tidyverse)
+library(kableExtra)
+model <- c("Linear", "Lasso", "ElasticNet", "Ridge", "Bayesian Ridge", "KNN", "Decision Tree", "SVR", "AdaBoost", "Gradient Boost", "Random Forest")
+mean <- c(-0.34, -1.00, -0.48, -0.22, -0.14, -0.15, -0.08, -0.27, -0.04, -0.05, -0.05)
+sd <- c(0.20, 0.13, 0.08, 0.14, 0.11, 0.09, 0.04, 0.17, 0.02, 0.04, 0.04)
+model_performance <- data.frame(Model = model, Mean = mean, SD = sd)
+
+knitr::kable(model_performance, format = "html", table.attr = "style='width:50%;'", caption = "Models comparison: Mean Squared Error distribution by algorithm") %>% kableExtra::kable_styling()
+
+```
+
+
+```{r pressure, echo=FALSE, out.width = '50%', fig.align = "center"}
+knitr::include_graphics("Nowcast/kfold_plot.JPG")
+```
+
 ### Data
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
