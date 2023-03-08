@@ -1,5 +1,5 @@
 ---
-title: "Nowcast monthly GDP"
+title: "Nowcasting Bolivia's monthly GDP"
 output: 
   html_document:
     toc: true
@@ -13,28 +13,52 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Results
 
-In the case of Bolivia, as in several developing countries, data on GDP or other indicators of economic activity suffer from limitations such as late publication, a low level of disaggregation and low frequency. Specifically, although time series of quarterly GDP or the monthly Global Index of Economic Activity are available in Bolivia, they are usually published with a delay of between three and six months.
+In the case of Bolivia, as in several developing countries, data on GDP or other indicators of economic activity suffer from limitations such as late publication, a low level of disaggregation, and low frequency. Specifically, although the time series of quarterly GDP and the monthly Global Index of Economic Activity (IGAE, for its Spanish acronym) are available in Bolivia, they are usually published with a lag of three to six months.
 
-As a proposal to overcome these limitations, I have developed a monthly GDP nowcast indicator for the Bolivian economy. I adopt the terminology of Giannone et al. (2008) and Banbura et al. (2013) regarding the definition of nowcast, which is: "forecast values of a time series, not published by official sources, for the current period".[^1]
+As a proposal to overcome these limitations, I have developed a monthly GDP nowcast indicator for the Bolivian economy. I adopt the terminology of Giannone et al. (2008) and Banbura et al. (2013) regarding the definition of nowcast, namely: "*forecast values of a time series not published by official sources for the current period*".[^1]
 
 [^1]: Banbura, M., Giannone, D., Modugno, M. & Reichlin, L. (2013). *Now-casting and the realtime data flow*. Handbook of economic forecasting (pp. 195-237). Elsevier.
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-The results show that the Bolivian economy would have grown by 3.3% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in aggregate economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.
+The results show that the Bolivian economy would have grown by 3.3% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in overall economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.[^2]
+
+[^2]: In [link1](https://blog.prif.org/2022/12/13/bolivia-a-new-battle-over-the-census-the-36-day-strike-of-the-santa-cruz-civic-movement-against-the-arce-government/) and [link2](https://crisis24.garda.com/alerts/2022/11/bolivia-organizers-agree-to-lift-strikes-in-santa-cruz-department-as-of-nov-28-lingering-strikes-and-blockades-possible-update-4) you can access news about the civic strikes in Santa Cruz during the months of October and November 2022.  
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/nowcast.html")
+```
+
+In particular, the lower economic activity due to the social conflicts in the last quarter of the year would have resulted in a growth of 0.4% in October and a decline of 2% in November, compared to similar months in 2021.
+
+
+```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/nowcast_g12_plot.html")
 ```
 
-Machine learning algorithms were used to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
+Methodologically, machine learning algorithms were used to nowcast Bolivia's monthly economic activity. The following sections dig deeper into the methodological details. 
 
 ## Methodology
 
+The monthly GDP nowcast for Bolivia is the result of averaging three machine learning forecasts of the monthly Global Index of Economic Activity (IGAE). Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression are the algorithms used to forecast the IGAE; they were selected after a k-fold cross-validation process in which other algorithms were also tested.
+
+### Training, validation and test sets
+
+First, the target value is the monthly Global Index of Economic Activity ($y$). Second, about 50 monthly variables were used as potential predictors of the target variable ($\mathbf{X}$), including current and lagged variables of the economic indicators published by the National Institute of Statistics of Bolivia (i.e., disaggregated information on production and consumption by sectors and activities), export and import data, indicators of the financial, fiscal and monetary system, and variables on domestic and commodity prices.  
+
+This sample spans from January 2007 to September 2022. In order to implement k-fold cross-validation and select the most suitable algorithms to predict IGAE, the sample was divided into 3 subsamples: i) training set; ii) validation set; and iii) test set. The training set corresponds to the period 2007M1-2017M12, the validation set comprises the time interval 2018M1-2022M9, and the test set (i.e. nowcast period) 2022M10-2022M12.
+
+Lastly, all variables are z-score normalized. That is, variables have a mean of 0 and a standard deviation of 1. To implement z-score normalization, input values are adjusted as shown in this formula:
+$$x^{(i)}_j = \dfrac{x^{(i)}_j - \mu_j}{\sigma_j} \tag{4}$$ 
+where $j$ selects a variable or a column in the $\mathbf{X}$ matrix. $µ_j$ is the mean of all the values for variable ($j$) and $\sigma_j$ is the standard deviation of variable ($j$) from the training set.
+
 ### Model Selection Process
 
-k-Fold Cross-Validation. I try out **regression methods** such as:
+The application of machine learning algorithms for nowcasting Bolivia's monthly economic activity has been favored due to their superior predictive power in comparison to traditional statistical models. Nonetheless, given the wide range of machine learning algorithms that could be suitable for this purpose, a k-fold cross-validation process is implemented to identify the most appropriate ones.
+
+K-fold cross-validation is a widely used technique to assess the predictive performance of machine learning algorithms. The procedure involves partitioning the dataset into k equally sized subsets or "folds". One of the folds is then reserved for validation, while the remaining k-1 folds are utilized for algorithm training. This process is iterated k times, with each iteration selecting a different fold for validation and using the other k-1 folds for training. Subsequently, the results of each iteration are averaged to obtain an overall performance metric, such as accuracy or mean squared error. This method helps to mitigate the bias that may arise from testing the algorithm's performance on a specific dataset, which can lead to overfitting or underfitting. 
+
+In this context, the predictive capacity of the following machine learning algorithms is assessed using k-fold cross-validation (with $k=10$), providing a more comprehensive evaluation of their effectiveness.
 
 -   Linear Regression
 -   Lasso
@@ -47,6 +71,8 @@ k-Fold Cross-Validation. I try out **regression methods** such as:
 -   Gradient Boosting Regressor
 -   Random Forest Regression
 -   Extra Trees Regressor
+
+The results show that Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression have the lowest mean squared errors. Therefore, these three algorithms are selected as the most suitable for predicting IGAE.
 
 ```{r, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 # Model performance table
@@ -61,19 +87,18 @@ knitr::kable(model_performance, format = "html", table.attr = "style='width:50%;
 
 ```
 
-
 ```{r pressure, echo=FALSE, out.width = '50%', fig.align = "center"}
 knitr::include_graphics("Nowcast/kfold_plot.JPG")
 ```
+
+
+For the training span, the plot below compares the IGAE observations with the predictions of the selected algorithms, and they are quite similar.
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/validation_plot.html")
 ```
 
+Finally, the average of the predictions from Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression is the final nowcast indicator.
 
 
 
-
-### Data
-
-Features used to forecast monthly GDP are.
