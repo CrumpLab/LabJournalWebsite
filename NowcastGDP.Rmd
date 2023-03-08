@@ -21,10 +21,11 @@ As a proposal to overcome these limitations, I have developed a monthly GDP nowc
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-Below, the results of the monthly GDP nowcast indicator show that the Bolivian economy would have grown by 3.5% until December 2022.
+The results show that the Bolivian economy would have grown by 3.3% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in aggregate economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/nowcast.html")
+htmltools::includeHTML("Nowcast/nowcast_g12_plot.html")
 ```
 
 Machine learning algorithms were used to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
