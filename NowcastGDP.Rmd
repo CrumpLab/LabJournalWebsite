@@ -21,10 +21,10 @@ As a proposal to overcome these limitations, I have developed a monthly GDP nowc
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-Below, the results of the monthly GDP nowcast indicator show that the Bolivian economy would have grown by 3.7% until December 2022.
+Below, the results of the monthly GDP nowcast indicator show that the Bolivian economy would have grown by 3.5% until December 2022.
 
 ```{r, echo=FALSE}
-htmltools::includeHTML("Nowcast/forecast_plot.html")
+htmltools::includeHTML("Nowcast/nowcast.html")
 ```
 
 Machine learning algorithms were used to forecast Bolivia's monthly economic activity. The following sections dig deeper into the methodological approach.
