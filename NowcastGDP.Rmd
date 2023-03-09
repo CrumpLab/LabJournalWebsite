@@ -21,7 +21,7 @@ As a proposal to overcome these limitations, I have developed a monthly GDP nowc
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-The results show that the Bolivian economy would have grown by 3.3% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in overall economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.[^2]
+The results show that the Bolivian economy would have grown by 3.23% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in overall economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.[^2]
 
 [^2]: In [link1](https://blog.prif.org/2022/12/13/bolivia-a-new-battle-over-the-census-the-36-day-strike-of-the-santa-cruz-civic-movement-against-the-arce-government/) and [link2](https://crisis24.garda.com/alerts/2022/11/bolivia-organizers-agree-to-lift-strikes-in-santa-cruz-department-as-of-nov-28-lingering-strikes-and-blockades-possible-update-4) you can access news about the civic strikes in Santa Cruz during the months of October and November 2022.  
 
