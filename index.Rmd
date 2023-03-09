@@ -1,28 +1,14 @@
 ---
-title: "DATA-DRIVEN ECONOMICS"
 output: html_document
 ---
 
-<style type="text/css">
-.title {
-  display: none;
-}
-
-#getting-started img {
-  margin-right: 10px;
-}
-
-</style>
-
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
-
+```{r pressure, echo=FALSE, out.width = '100%', fig.align = "center"}
+knitr::include_graphics("images/chalk_fibonacci2.JPG")
+```
 
 Hello, my name is Osmar Bolivar and I am an economist who specializes in econometrics, remote sensing, and the application of *Machine Learning* algorithms to socioeconomic analysis. As the creator of this website, my goal is to share empirical evidence and technical inputs for further analysis and discussion of structural and conjuncture issues related to Bolivia's economy as well as other countries or regions of the world. It is my hope that the content will not only be useful for academic analysis, but also for data-driven policy design.
 
-In case you require feedback or further information, please feel free to contact me.
-
-![](images/whatsapp-logo-png-2261.png){width="5%"} (+591) 69900027  
+In case you require further information, please feel free to contact me.
 
 ![](images/logo-gmail-9952.png){width="5%"} osmar.jsmpf@gmail.com  
 
@@ -30,12 +16,6 @@ In case you require feedback or further information, please feel free to contact
 
 ![](images/512x512-logo-27148.png){width="5%"} https://github.com/osmarbolivar  
 
+![](images/whatsapp-logo-png-2261.png){width="5%"} (+591) 69900027  
 
 
-</div>
-<div class="col-sm-6">
-
-<a href = "https://playgameoflife.com/">
-![](images/life_game.gif){width="65%"}
-</a>
-</div>
