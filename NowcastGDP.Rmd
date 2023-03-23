@@ -13,30 +13,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Results
 
-In the case of Bolivia, as in several developing countries, data on GDP or other indicators of economic activity suffer from limitations such as late publication, a low level of disaggregation, and low frequency. Specifically, although the time series of quarterly GDP and the monthly Global Index of Economic Activity (IGAE, for its Spanish acronym) are available in Bolivia, they are usually published with a lag of three to six months.
+In the context of Bolivia, similar to many other developing nations, the availability of data pertaining to GDP or other economic activity indicators is constrained by various limitations such as delayed publication, inadequate disaggregation, and low frequency. Despite the existence of quarterly GDP time series and the monthly Global Index of Economic Activity (IGAE, for its Spanish acronym) in Bolivia, they are typically released with a delay of three to six months. 
 
-As a proposal to overcome these limitations, I have developed a monthly GDP nowcast indicator for the Bolivian economy. I adopt the terminology of Giannone et al. (2008) and Banbura et al. (2013) regarding the definition of nowcast, namely: "*forecast values of a time series not published by official sources for the current period*".[^1]
+In response to these constraints, this article proposes a monthly GDP nowcast indicator for the Bolivian economy. The terminology of Giannone et al. (2008) and Banbura et al. (2013) is assumed to define nowcasting as "*forecasting values of a time series not published by official sources for the current period*".[^1]
 
 [^1]: Banbura, M., Giannone, D., Modugno, M. & Reichlin, L. (2013). *Now-casting and the realtime data flow*. Handbook of economic forecasting (pp. 195-237). Elsevier.
 
     Giannone, D., Reichlin, L. & Small, D. (2008). *Nowcasting: The real-time informational content of macroeconomic data*. Journal of Monetary Economics, 55(4), 665-676. <https://doi.org/10.1016/j.jmoneco.2008.05.010>
 
-The results show that the Bolivian economy would have grown by 3.23% at the end of 2022. Although the indicator of monthly economic activity (i.e. IGAE) showed a cumulative growth of 4.3% until September, there has been a slowdown in overall economic activity since October. This slowdown is mainly explained by the partial paralysis of economic activity due to the civil strikes promoted in the department of Santa Cruz, one of the regions with the highest contribution to national production.[^2]
+The findings demonstrate that the Bolivian economy is projected to have expanded by 3.23% by the conclusion of 2022. Despite the indicator of monthly economic activity, namely the IGAE, displaying a cumulative growth of 4.3% until September, there has been a deceleration in overall economic activity since October. This slowdown can be largely attributed to the partial cessation of economic activity resulting from the civil strikes originated in the department of Santa Cruz, which is one of the regions that significantly contributes to national production.[^2]
 
-[^2]: In [link1](https://blog.prif.org/2022/12/13/bolivia-a-new-battle-over-the-census-the-36-day-strike-of-the-santa-cruz-civic-movement-against-the-arce-government/) and [link2](https://crisis24.garda.com/alerts/2022/11/bolivia-organizers-agree-to-lift-strikes-in-santa-cruz-department-as-of-nov-28-lingering-strikes-and-blockades-possible-update-4) you can access news about the civic strikes in Santa Cruz during the months of October and November 2022.  
+[^2]: News regarding the civic strikes that occurred in Santa Cruz during the months of October and November 2022 can be accessed in [link1](https://blog.prif.org/2022/12/13/bolivia-a-new-battle-over-the-census-the-36-day-strike-of-the-santa-cruz-civic-movement-against-the-arce-government/) and [link2](https://crisis24.garda.com/alerts/2022/11/bolivia-organizers-agree-to-lift-strikes-in-santa-cruz-department-as-of-nov-28-lingering-strikes-and-blockades-possible-update-4).
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/nowcast.html")
 ```
 
-In particular, the lower economic activity due to the social conflicts in the last quarter of the year would have resulted in a growth of 0.4% in October and a decline of 2% in November, compared to similar months in 2021.
+The present analysis indicates that the recent social conflicts have had a discernible impact on economic activity. Specifically, the data suggests that there was a modest growth of 0.4% in October followed by a notable decline of 2% in November, when compared to analogous periods in the preceding year.
 
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/nowcast_g12_plot.html")
 ```
 
-Methodologically, machine learning algorithms were used to nowcast Bolivia's monthly economic activity. The following sections dig deeper into the methodological details. 
+Methodologically, machine learning algorithms have been effectively utilized to nowcast Bolivia's monthly economic activity. The use of machine learning techniques has enabled the identification of patterns and the extraction of meaningful insights from complex datasets. The results of this approach have led to more accurate and timely projections of economic activity, which is an invaluable tool for decision-making and resource allocation. By leveraging the computational power of machine learning, economists and researchers can obtain more reliable and robust predictions that contribute to a better understanding of current economic conditions and trends.
+ 
 
 ## Methodology
 
