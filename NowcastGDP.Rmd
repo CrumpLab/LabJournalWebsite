@@ -1,5 +1,5 @@
 ---
-title: "Nowcasting Bolivia's monthly GDP"
+title: "Nowcasting Bolivia's monthly GDP growth"
 output: 
   html_document:
     toc: true
@@ -41,25 +41,23 @@ Methodologically, machine learning algorithms have been effectively utilized to 
 
 ## Methodology
 
-The monthly GDP nowcast for Bolivia is the result of averaging three machine learning forecasts of the monthly Global Index of Economic Activity (IGAE). Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression are the algorithms used to forecast the IGAE; they were selected after a k-fold cross-validation process in which other algorithms were also tested.
+The current monthly GDP nowcast for Bolivia has been derived through a rigorous process of machine learning. Specifically, the forecast is an average of three distinct algorithms: Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression. These algorithms have been selected after undergoing a k-fold cross-validation process, which involved testing various other algorithms. The forecasts are based on the monthly Global Index of Economic Activity (IGAE).
 
 ### Training, validation and test sets
 
-First, the target value is the monthly Global Index of Economic Activity ($y$). Second, about 50 monthly variables were used as potential predictors of the target variable ($\mathbf{X}$), including current and lagged variables of the economic indicators published by the National Institute of Statistics of Bolivia (i.e., disaggregated information on production and consumption by sectors and activities), export and import data, indicators of the financial, fiscal and monetary system, and variables on domestic and commodity prices.  
+The study aims to predict the monthly Global Index of Economic Activity, $y$, using approximately 50 monthly variables, $\mathbf{X}$, as potential predictors. These variables include current and lagged economic indicators published by the National Institute of Statistics of Bolivia, export and import data, indicators of the financial, fiscal and monetary system, and variables on domestic and commodity prices. The sample period ranges from January 2007 to September 2022. 
 
-This sample spans from January 2007 to September 2022. In order to implement k-fold cross-validation and select the most suitable algorithms to predict IGAE, the sample was divided into 3 subsamples: i) training set; ii) validation set; and iii) test set. The training set corresponds to the period 2007M1-2017M12, the validation set comprises the time interval 2018M1-2022M9, and the test set (i.e. nowcast period) 2022M10-2022M12.
-
-Lastly, all variables are z-score normalized. That is, variables have a mean of 0 and a standard deviation of 1. To implement z-score normalization, input values are adjusted as shown in this formula:
+To ensure the robustness of the predictive models and select the most suitable algorithms, the sample was divided into three subsamples: a training set, a validation set, and a test set. The training set covers the period from 2007M1 to 2017M12, the validation set comprises the time interval from 2018M1 to 2022M9, and the test set (i.e., nowcast period) ranges from 2022M10 to 2022M12. All variables are z-score normalized to ensure comparability and avoid bias. Specifically, the input values are adjusted according to the formula provided.
 $$x^{(i)}_j = \dfrac{x^{(i)}_j - \mu_j}{\sigma_j} \tag{4}$$ 
-where $j$ selects a variable or a column in the $\mathbf{X}$ matrix. $µ_j$ is the mean of all the values for variable ($j$) and $\sigma_j$ is the standard deviation of variable ($j$) from the training set.
+where $j$ selects a variable or a column in the $\mathbf{X}$ matrix. $µ_j$ is the mean of all the values for variable $j$ and $\sigma_j$ is the standard deviation of variable $j$ from the training set.
 
 ### Model Selection Process
 
-The application of machine learning algorithms for nowcasting Bolivia's monthly economic activity has been favored due to their superior predictive power in comparison to traditional statistical models. Nonetheless, given the wide range of machine learning algorithms that could be suitable for this purpose, a k-fold cross-validation process is implemented to identify the most appropriate ones.
+The use of machine learning algorithms in the nowcasting of GDP has gained popularity due to their superior predictive power when compared to traditional statistical models. However, given the diverse range of machine learning algorithms that could be suitable for this purpose, a k-fold cross-validation process is implemented to identify the most appropriate ones.
 
-K-fold cross-validation is a widely used technique to assess the predictive performance of machine learning algorithms. The procedure involves partitioning the dataset into k equally sized subsets or "folds". One of the folds is then reserved for validation, while the remaining k-1 folds are utilized for algorithm training. This process is iterated k times, with each iteration selecting a different fold for validation and using the other k-1 folds for training. Subsequently, the results of each iteration are averaged to obtain an overall performance metric, such as accuracy or mean squared error. This method helps to mitigate the bias that may arise from testing the algorithm's performance on a specific dataset, which can lead to overfitting or underfitting. 
+K-fold cross-validation is a widely accepted technique for evaluating the predictive performance of machine learning algorithms. The process involves partitioning the dataset into k equally sized subsets or "folds". One of the folds is reserved for validation, while the remaining k-1 folds are utilized for algorithm training. This procedure is repeated k times, with each iteration selecting a different fold for validation and using the other k-1 folds for training. The results of each iteration are subsequently averaged to obtain an overall performance metric, such as accuracy or mean squared error. This method helps to mitigate the bias that may arise from testing the algorithm's performance on a specific dataset, which can lead to overfitting or underfitting.
 
-In this context, the predictive capacity of the following machine learning algorithms is assessed using k-fold cross-validation (with $k=10$), providing a more comprehensive evaluation of their effectiveness.
+In this context, the predictive capacity of the following machine learning algorithms is evaluated using k-fold cross-validation (with a value of k=10), providing a more comprehensive assessment of their effectiveness.
 
 -   Linear Regression
 -   Lasso
@@ -67,39 +65,37 @@ In this context, the predictive capacity of the following machine learning algor
 -   Ridge Regression:
 -   K Neighbors Regressor
 -   Decision Tree Regressor
--   Simple Vector Regression (SVR)
+-   Simple Vector Regression
 -   Ada Boost Regressor
 -   Gradient Boosting Regressor
 -   Random Forest Regression
 -   Extra Trees Regressor
 
-The results show that Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression have the lowest mean squared errors. Therefore, these three algorithms are selected as the most suitable for predicting IGAE.
+The findings indicate that the Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression exhibit the lowest negative mean squared errors, thus rendering them the most appropriate algorithms for forecasting IGAE.
 
 ```{r, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 # Model performance table
 library(tidyverse)
 library(kableExtra)
 model <- c("Linear", "Lasso", "ElasticNet", "Ridge", "Bayesian Ridge", "KNN", "Decision Tree", "SVR", "AdaBoost", "Gradient Boost", "Random Forest")
-mean <- c(-0.34, -1.00, -0.48, -0.22, -0.14, -0.15, -0.08, -0.27, -0.04, -0.05, -0.05)
-sd <- c(0.20, 0.13, 0.08, 0.14, 0.11, 0.09, 0.04, 0.17, 0.02, 0.04, 0.04)
+mean <- c(-0.14, -1.00, -0.48, -0.09, -0.07, -0.10, -0.10, -0.18, -0.05, -0.05, -0.05)
+sd <- c(0.06, 0.13, 0.08, 0.04, 0.03, 0.04, 0.08, 0.10, 0.03, 0.04, 0.04)
 model_performance <- data.frame(Model = model, Mean = mean, SD = sd)
 
-knitr::kable(model_performance, format = "html", table.attr = "style='width:50%;'", caption = "Models comparison: Mean Squared Error distribution by algorithm") %>% kableExtra::kable_styling()
+knitr::kable(model_performance, format = "html", table.attr = "style='width:50%;'", caption = "Models comparison: Negative Mean Squared Error distribution by algorithm") %>% kableExtra::kable_styling()
 
 ```
 
 ```{r pressure, echo=FALSE, out.width = '50%', fig.align = "center"}
-knitr::include_graphics("Nowcast/kfold_plot.JPG")
+knitr::include_graphics("Nowcast/kfold_plot.PNG")
 ```
 
 
-For the training span, the plot below compares the IGAE observations with the predictions of the selected algorithms, and they are quite similar.
+During the training period, the subsequent graph presents a comparison between the IGAE observations and the selected algorithms' predictions, indicating a remarkable similarity between the two.
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("Nowcast/validation_plot.html")
 ```
 
-Finally, the average of the predictions from Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression is the final nowcast indicator.
-
-
+Finally, the average of the forecasts derived from the Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression algorithms serves as the ultimate nowcast metric.
 
