@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Results
 
-In the context of Bolivia, similar to many other developing nations, the availability of data pertaining to GDP or other economic activity indicators is constrained by various limitations such as delayed publication, inadequate disaggregation, and low frequency. Despite the existence of quarterly GDP time series and the monthly Global Index of Economic Activity (IGAE, for its Spanish acronym) in Bolivia, they are typically released with a delay of three to six months. 
+In the context of Bolivia, akin to numerous other developing countries, the accessibility of data concerning GDP or other economic activity indicators is circumscribed by several limitations, including delayed publication, inadequate disaggregation, and low frequency. Despite the existence of quarterly GDP time series and the monthly Global Index of Economic Activity (IGAE, referred to as "IGAE" in Spanish) in Bolivia, they are typically released with a notable time lag of three to six months.
 
-In response to these constraints, this article proposes a monthly GDP nowcast indicator for the Bolivian economy. The terminology of Giannone et al. (2008) and Banbura et al. (2013) is assumed to define nowcasting as "*forecasting values of a time series not published by official sources for the current period*".[^1]
+In response to these constraints, this scholarly article proposes the establishment of a monthly GDP nowcast indicator for the Bolivian economy. The term *"nowcasting,"* as defined by Giannone et al. (2008) and Banbura et al. (2013), refers to the process of forecasting values of a time series that are not officially published for the current period.[^1]
 
 [^1]: Banbura, M., Giannone, D., Modugno, M. & Reichlin, L. (2013). *Now-casting and the realtime data flow*. Handbook of economic forecasting (pp. 195-237). Elsevier.
 
@@ -41,7 +41,7 @@ Methodologically, machine learning algorithms have been effectively utilized to 
 
 ## Methodology
 
-The current monthly GDP nowcast for Bolivia has been derived through a rigorous process of machine learning. Specifically, the forecast is an average of three distinct algorithms: Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression. These algorithms have been selected after undergoing a k-fold cross-validation process, which involved testing various other algorithms. The forecasts are based on the monthly Global Index of Economic Activity (IGAE).
+The present monthly GDP nowcast for Bolivia has been derived employing a robust process of machine learning. More specifically, the forecast is a result of averaging the outcomes obtained from three distinct algorithms: Gradient Boosting Regressor, Ada Boost Regressor, and Random Forest Regression. The selection of these algorithms was preceded by a meticulous k-fold cross-validation process, wherein various alternative algorithms were rigorously tested. The forecasting process is founded on the utilization of the monthly Global Index of Economic Activity (IGAE) as the target variable.
 
 ### Training, validation and test sets
 
