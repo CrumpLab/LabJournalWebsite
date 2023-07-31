@@ -10,6 +10,8 @@ navbar:
       menu:
         - text: "Nowcast GDP"
           href: NowcastGDP.html
+        - text: "Education in Bolivia"
+          href: Education.html
 output_dir: "docs"
 
 output:
