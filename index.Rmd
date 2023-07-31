@@ -4,12 +4,12 @@ output: html_document
 ---
 
 ```{r pressure, echo=FALSE, out.width = '100%', fig.align = "center"}
-knitr::include_graphics("images/chalk_fibonacci2.JPG")
+knitr::include_graphics("images/chalk_fibonacci2.jpg")
 ```
 
-Hello, my name is Osmar Bolivar and I am an economist who specializes in econometrics, remote sensing, and the application of *Machine Learning* algorithms for socioeconomic analysis. As the creator of this website, my goal is to share empirical evidence and technical inputs for further analysis and discussion of structural and conjuncture issues related to Bolivia's economy as well as other countries or regions of the world. It is my hope that the content will not only be useful for academic analysis, but also for data-driven policy design.
+Greetings, my name is Osmar Bolivar, and I am an economist with a specialized focus on econometrics, remote sensing, and the utilization of Machine Learning algorithms for socioeconomic analysis. As the proprietor of this website, my primary objective is to disseminate empirical evidence and technical insights to foster in-depth examination and discourse concerning both structural and conjunctural matters pertinent to Bolivia's economy, as well as other countries or regions worldwide. I aspire for the content presented here to be not only beneficial for academic investigation but also instrumental in data-driven policy formulation.
 
-In case you require further information, please feel free to contact me.
+Should you require additional information, please do not hesitate to reach out to me.
 
 ![](images/logo-gmail-9952.png){width="5%"} osmar.jsmpf@gmail.com  
 

@@ -11,15 +11,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Education in Bolivia has been a subject of both triumphs and challenges, mirroring the country's efforts to bridge socio-economic gaps and promote equal opportunities for its citizens. As a nation rich in cultural diversity and history, Bolivia recognizes the importance of education as a catalyst for societal progress and personal growth. Despite its endeavors, the education system grapples with notable strengths and weaknesses, which have profound implications for its efficiency and accuracy in resource allocation. 
+Education in Bolivia has been a subject of both triumphs and challenges, mirroring the country's efforts to bridge socio-economic gaps and promote equal opportunities for its citizens. As a nation rich in cultural diversity and history, Bolivia recognizes the importance of education as a catalyst for societal progress and personal growth. Despite its endeavors, the education system grapples with notable strengths and weaknesses, which have profound implications for its efficiency and accuracy in resource allocation.
 
 This article delves into some key aspects of Bolivia's education landscape, shedding light on the strides made in providing accessible education, the persistent disparities that hinder progress, and the ongoing efforts to optimize the allocation of resources to enhance the effectiveness and inclusiveness of this vital service.
 
 ## Allocation of teachers and schools
 
+### Teacher-to-school ratio
+
 During the period from 2000 to 2016, there was a noteworthy increase in the number of teachers in schools at the national level, amounting to a significant rise of 46%. In parallel, the number of educational institutions also experienced growth, with an 8.4% increase during the same time frame. This expansion resulted in absolute increments in both the count of teachers and educational units nationwide. However, the most salient observation was the observed enhancement in the teacher-to-school ratio, which rose from 7 teachers per school in 2000 to 9 teachers per school by 2016. This positive development is associated with a series of critical advantages, encompassing advancements in educational quality, reduction of educational disparities, and reinforcement of the education system, ultimately fostering economic development.[^1]
 
-[^1]: Statistics regarding education in Bolivia are extracted and processed with data published by the Ministry of Education of Bolivia and, secondary sources like the National Institute of Bolivia and others.  
+[^1]: Statistics regarding education in Bolivia are extracted and processed with data published by the Ministry of Education of Bolivia and, secondary sources like the National Institute of Bolivia and others.
 
 Moreover, the augmentation in the teacher-to-school ratio has the potential to yield far-reaching benefits in the comprehensive development of the country, playing a pivotal role in the cultivation of a more prepared and skilled generation of citizens capable of confronting the challenges of the future.
 
@@ -34,17 +36,24 @@ knitr::include_graphics("Education/edu_plt1.png")
 Furthermore, the subsequent maps illustrate that, by 2016, a considerable number of municipalities exhibited an enhancement in their teacher-to-school ratio in comparison to their status in 2000. Nonetheless, it is evident that the most significant progress in this indicator is concentrated primarily in municipalities encompassing capital cities and those situated in close proximity to them.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("Education/edu_plt2.png")
+knitr::include_graphics("Education/edu_plt2a.png")
+knitr::include_graphics("Education/edu_plt2b.png")
 ```
 
+In the year 2016, notable municipalities with the most elevated teacher-to-school ratios were El Alto (27), Colcapihua (24), Oruro (22), and Villa Huanuni (20). In particular, these municipalities attained a ratio of 20 or higher, a value that surpasses even that of capital cities such as Nuestra Señora de La Paz, Cochabamba, or Santa Cruz de la Sierra. Moreover, it is crucial to underscore that these municipalities exhibited a significant advancement in the allocation of teachers between 2000 and 2016.
 
 
-
-
-
-
-
-
-
-
+| Department | Municipality | 2000 | 2016 |
+|------------|--------------|------|------|
+|La Paz|	El Alto|	18.0|	27.0|
+|Cochabamba|	Colcapirhua|	18.0|	24.0|
+|Oruro|	Oruro|	16.0|	22.0|
+|Oruro|	Villa Huanuni|	15.0|	20.0|
+|Cochabamba|	Quillacollo|	15.0|	18.0|
+|Potosi|	Llallagua|	11.0|	17.0|
+|Chuquisaca|	Sucre|	14.0|	17.0|
+|Cochabamba|	Cochabamba|	16.0|	17.0|
+|La Paz|	Nuestra Senora de La Paz|	16.0|	17.0|
+|Santa Cruz|	Montero|	11.0|	17.0|
+: 10th highest teacher-to-school municipalities
 
