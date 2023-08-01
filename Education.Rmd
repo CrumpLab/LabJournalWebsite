@@ -57,3 +57,16 @@ In the year 2016, notable municipalities with the most elevated teacher-to-schoo
 |Santa Cruz|	Montero|	11.0|	17.0|
 : 10th highest teacher-to-school municipalities
 
+
+### Teacher-to-inhabitants
+
+Upon calculating the ratio of teachers per 1000 inhabitants within the age range of 5 to 29 years, a potential age group benefiting from the education service, a relatively symmetrical distribution of this indicator is observed. Approximately 50% of municipalities would possess a minimum (or maximum) availability of 36 teachers per 1000 individuals within the specified age range.[^2] 
+
+```{r, echo=FALSE}
+knitr::include_graphics("Education/edu_plt3.png")
+```
+
+
+[^2]: It is essential to acknowledge that the population data utilized is based on the records from the National Population and Housing Census 2012, considering the limited information available.
+
+
