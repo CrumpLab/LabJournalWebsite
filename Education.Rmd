@@ -60,14 +60,14 @@ In the year 2016, notable municipalities with the most elevated teacher-to-schoo
 
 ### Teacher-to-inhabitants
 
-Upon calculating the ratio of teachers per 1000 inhabitants within the age range of 5 to 29 years, a potential age group benefiting from the education service, a relatively symmetrical distribution of this indicator is observed. Approximately 50% of municipalities would possess a minimum (or maximum) availability of 36 teachers per 1000 individuals within the specified age range.[^2] 
+Upon calculating the ratio of teachers per 1000 inhabitants within the age range of 5 to 29 years, a potential age group benefiting from the education service, a relatively symmetrical distribution of this indicator is observed. On average, municipalities would possess an availability of 34 teachers per 1000 individuals within the specified age range.[^2] 
 
 ```{r, echo=FALSE}
 knitr::include_graphics("Education/edu_plt3.png")
 ```
 
 
-[^2]: It is essential to acknowledge that the population data utilized is based on the records from the National Population and Housing Census 2012, considering the limited information available.
+[^2]: It is essential to acknowledge that the population in the age range of 5 to 29 years is calculated by multiplying the total population of the municipality in 2016 with the percentage that represented this age group in the National Population and Housing Census 2012, considering the limited information available.
 
 To explore potential determinants influencing the allocation of teachers per 1000 inhabitants (within the age range of 5 to 29 years), a logit model was estimated, and the resulting marginal effects are presented in the following table. The dependent variable in this model is a dummy variable, taking the value of 1 for municipalities with a ratio of teachers per 1000 inhabitants higher than the average in 2016. The explanatory variables utilized are based on data from the year 2012, as more up-to-date information on these variables is unavailable. This approach also allows for an interpretation in line with past needs or characteristics of the municipalities that may influence the probability of registering ratios of teachers per 1000 inhabitants higher than the average.
 
