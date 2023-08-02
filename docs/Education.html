@@ -498,6 +498,142 @@ a minimum (or maximum) availability of 36 teachers per 1000 individuals
 within the specified age range.<a href="#fn2" class="footnote-ref"
 id="fnref2"><sup>2</sup></a></p>
 <p><img src="Education/edu_plt3.png" /><!-- --></p>
+<p>To explore potential determinants influencing the allocation of
+teachers per 1000 inhabitants (within the age range of 5 to 29 years), a
+logit model was estimated, and the resulting marginal effects are
+presented in the following table. The dependent variable in this model
+is a dummy variable, taking the value of 1 for municipalities with a
+ratio of teachers per 1000 inhabitants higher than the average in 2016.
+The explanatory variables utilized are based on data from the year 2012,
+as more up-to-date information on these variables is unavailable. This
+approach also allows for an interpretation in line with past needs or
+characteristics of the municipalities that may influence the probability
+of registering ratios of teachers per 1000 inhabitants higher than the
+average.</p>
+<table>
+<caption>Logit model: Teacher-to-1000-inhabitants marginal effects.
+Standard errors are shown in parentheses. *** indicates statistical
+significance at the 1% level.</caption>
+<thead>
+<tr class="header">
+<th>Dep. Variable: 1 if teacher-to-1000 &gt; mean</th>
+<th>dy/dx</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>% population attending secondary school</td>
+<td>10.5578***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(2.552)</td>
+</tr>
+<tr class="odd">
+<td>% population attending public school</td>
+<td>6.9818***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(1.562)</td>
+</tr>
+<tr class="odd">
+<td>% population not attending school</td>
+<td>5.1757***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(1.337)</td>
+</tr>
+<tr class="odd">
+<td>% Rural Population</td>
+<td>0.5188***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.131)</td>
+</tr>
+<tr class="odd">
+<td>Years of education (mean)</td>
+<td>-0.0787***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.030)</td>
+</tr>
+<tr class="odd">
+<td>% Spanish-spoken population</td>
+<td>0.2120</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.305)</td>
+</tr>
+<tr class="odd">
+<td>% population attending primary school</td>
+<td>-8.7773</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(31.025)</td>
+</tr>
+<tr class="odd">
+<td>Illiteracy rate</td>
+<td>-0.0233</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.017)</td>
+</tr>
+<tr class="odd">
+<td>Poverty rate</td>
+<td>-0.0040</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.003)</td>
+</tr>
+<tr class="odd">
+<td>Municipal Health Index</td>
+<td>-0.4963</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>(0.520)</td>
+</tr>
+<tr class="odd">
+<td>Pseudo R-squ.:</td>
+<td>0.2434</td>
+</tr>
+<tr class="even">
+<td>No. Observations:</td>
+<td>339</td>
+</tr>
+</tbody>
+</table>
+<p>Preliminary findings reveal several intriguing observations. Notably,
+the likelihood of having a ratio of teachers per 1000 inhabitants above
+the average is positively associated with a higher proportion of the
+population attending the secondary level. Similarly, in municipalities
+with a greater proportion of the population attending public schools,
+the probability of assigning more teachers per 1000 inhabitants
+increases.</p>
+<p>Conversely, a higher probability of having a higher ratio of teachers
+per 1000 inhabitants in 2016 is observed for municipalities that
+displayed a relatively high percentage of their population not attending
+any educational unit in 2012. This could indicate a prioritization of
+teacher allocation in municipalities with lower participation in formal
+educational learning.</p>
+<p>However, factors such as poverty, illiteracy, and health conditions,
+which could potentially increase the socioeconomic vulnerability of the
+population and merit consideration in teacher assignment, do not
+demonstrate a statistically significant effect on the probability that a
+municipality has a ratio of teachers per 1000 inhabitants above the
+average.</p>
+</div>
+</div>
+<div id="concluding-insights" class="section level2">
+<h2>Concluding Insights</h2>
 <p>Optimally allocating teachers among municipalities in Bolivia
 requires a comprehensive and strategic approach that takes into account
 the unique needs and challenges faced by each region. To begin with,
@@ -529,7 +665,6 @@ throughout Bolivia’s diverse landscape. By pursuing these strategies,
 Bolivia can work towards providing quality education for all its
 citizens, fostering a more inclusive and prosperous future for the
 nation.</p>
-</div>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
