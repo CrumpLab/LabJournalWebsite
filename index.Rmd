@@ -1,5 +1,5 @@
 ---
-title: "MyLabJournal"
+title: "İlayda Özcan Personal Page"
 output: html_document
 ---
 
@@ -37,7 +37,8 @@ This is a template example for lab journaling. Students in Matt Crump's Human Co
 
 ### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
 
-<a href = "https://crumplab.github.io">
+<a href = "https://www.kindpng.com/picc/m/73-731236_transparent-science-icons-png-data-science-icon-png.png">
 ![](images/logo.png)
 </a>
 </div>
+
