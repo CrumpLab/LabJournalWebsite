@@ -1,43 +1,235 @@
 ---
-title: "MyLabJournal"
-output: html_document
+title: " "
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_width: 7
 ---
-
-<style type="text/css">
-.title {
-  display: none;
-}
-
-#getting-started img {
-  margin-right: 10px;
-}
-
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<style>
+  .col2 {
+    columns: 2 300px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
 </style>
+ 
+<div class="col2">
 
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
+### **Hello World!**
 
-# **My Lab Journal**
+I am Lucy, a Data analyst leveraging data insights to enhance company operations, optimize processes, and drive efficient decision-making for continuous improvement.
+I have a graduate degree in Data Analytics and I enjoy solving complex
+business problems using data. I love jogging and cannot sleep
+without watching Youtube.
 
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
+<img src="https://media.giphy.com/media/h7No5m3tAeV4Q/giphy.gif?cid=ecf05e47deu9vpwcbq3vc8c06f0p0avmfbr5x2kky60cl886&ep=v1_gifs_search&rid=giphy.gif&ct=g"/>
+<br>
+<br>
 
-## How to use
-
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
-
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
-
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
-
-4. Change everything to make it your own.
+<img src="images/Swap.png" title="MyImage" alt="Avatar" width="200px" height="500px" style="display: block; margin: auto;
+border-radius: 50%;"/>
+<br>
+<div class="col2">
+<center>
+<a href=" https://www.linkedin.com/in/wu-lucy/"><img src="images/Li.png"  style="width:40px; height:30px" title="LinkedIn" alt="LinkedIn"></a>
+<a href="https://github.com/Lucywuinwa"><img src="images/GitHub.png"  style="width:80px; height:30px" title="Git" alt="Git"></a>
+<a href="mailto:lucywuinwa@gmail.com"><img src="images/mail.png"  style="width:30px; height:30px" title="mail" alt="mail"></a>
+</center>
+</div>
 
 
 </div>
-<div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
 
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
+```
+                                                                                                                
+This is a repository of some of the projects I worked on. 
+
+## Time Series Analysis and Forecasting
+
+This solution is to answer "What is a reasonable forecast for 2022 Q1, Q2, Q3, and Q4 revenue given the patterns in past data?" 
+
+Following models are discussed-
+
+**MLE based models-** These are the models in which parameter estimation happens based on maximum likelihood
+
+* NBD 
+* PNBD
+* MBG/NBD 
+* BG/CNBD-k 
+* MBG/CNBD-k 
+
+**Markov-Chain-Monte-Carlo based models-** These models use MCMC simulation for parameter estimation 
+
+* Pareto/NBD 
+* Pareto/GGG 
+
+<div class="col2">
+<img src="images/caliTest.png" title="Test vs caliberation period" alt="Test vs caliberation period" height="400px" width="800px" style="display: block; margin: auto;"/>
+
+
+<img src="images/transactions.png" title="Simulated Transactions"  alt="Simulated Transactions" height="400px" width="800px" style="display: block; margin: auto;"/>
+</div>
+<br>
+
+<img src="images/CLTVcomps.png" title="CLTVcomps" alt="CLTVcomps.png" height="400px" width="1600px" style="display: block; margin: auto;"/>
+
+
+
+<br>
+<a href="CLTV.html">
+![contnue reading..]
 </a>
+<br>
+
+
+## ML Algorithm benchmarking
+
+This blog is aimed at comparing top machine learning algorithm performance in solving a binary classification problem. The data used for this project pertains to bankruptcy. The objective is to predict if an organization will go bankrupt or not. False possitive predictions are penalized 15 times False negative prediction.
+
+<img src="images/unnamed-chunk-32-1.png" title="AUC curve comparison" alt="testing" height="400px" width="800px" style="display: block; margin: auto;"/>
+
+**Following are the alorithms that wil be considered for comparison :**
+
+
+* **Logistic Regression**
+* **Lasso Regression -L1 Norm Regularization**
+* **Classification Tree**
+* **RandomForest**
+* **Generalized Additive Model**
+* **Neural Nets**
+* **Linear discriminant analysis** 
+* **Boosting Algorithms**
+
+<br>
+<a href="binaryClassification.html">
+![contnue reading..]
+</a>
+<br>
+
+## Unsupervised learning
+
+Data Science and Analytics is nowadays widely used in retail industry. With the advent of bid data tools and higher computing power, sophisticated algorithms can crunch huge volumes of transactional data to extract meaningful insights. Companies such as Kroger invest heavily to transform more than a hundred-year-old retail industry through analytics.
+
+This project is an attempt to apply unsupervised learning algorithms on the transactional data to formulate strategies to improve the sales of the products.
+
+<img src="images/aRules.png" title="Association rules" alt="testing" height="400px" width="800px" style="display: block; margin: auto;"/>
+<br>
+**Following steps are discussed:**
+
+
+* **Customer Segmentation**
+* **Deciding optimum number of clustes**
+* **Market Basket Analysis**
+
+<a href="retail.html">
+![contnue reading..]
+</a>
+<br>
+
+## Regression Diagnostics
+
+The purpose of this project is to solve a simple problem using linear regression and understand various feature selection and model selection techniques along the way. In this project we predict the landing distance of the aircrafts based on different details. There have been many major mishaps during the landing of the aircraft, resulting in the loss of many lives.
+
+<div class="col2">
+<img src="images/ldistance1.png" title="Index influence plot" alt="testing" height="400px" width="800px" style="display: block; margin: auto;"/>
+
+
+<img src="images/ldistance2.png" title="Studentized Residuals" alt="testing" height="400px" width="800px" style="display: block; margin: auto;"/>
 </div>
+<br>
+
+**Following major steps are discussed :**
+
+* **Exploratory Data Analysis**
+* **Model building**
+* **Regression model diagnostics**
+
+<a href="landingDistance.html">
+![contnue reading..]
+</a>
+<br>
+
+## ML Hackathon
+
+This is a code for an online hackathon to predict likelihood of someone suffering from stroke. Various algorithms are used to get predictions. Since the time was limited, the documentation in this code is sloppy.
+
+<img src="images/nnet.png" title="Neural Net" alt="nnet" height="400px" width="800px" style="display: block; margin: auto;"/>
+<br>
+
+<a href="hackathon.html">
+![contnue reading..]
+</a>
+<br>
+
+## Exploratory Data Analysis
+
+Exploratory data analysis of SF Bay area **[Fordgobike](https://www.fordgobike.com/)** bike share data.
+
+<img src="images/fordweather.png" title="Weather" alt="Leaflet" height="400px" width="800" style="display: block; margin: auto;"/>
+<br>
+
+ **Following major steps are discussed :**
+
+* **Data cleaning**
+* **Exploratory Data Analysis**
+* **Implementation of interactive graphs in R**
+* **Embedding Tableau workbooks in R**
+* **Geospatial Analysis**
+* **Business Recommendations**
+
+<a href="fordGobike.html">
+![contnue reading..]
+</a>
+<br>
+
+## iPhoneX vs Galaxy Note8
+
+This is an old analysis done sometime after both Note8 and iPhoneX were launched. One limitation of Twitter free API is that you cannot extract historical tweets. So the sentiments may not be relevant today but what the heck, data is always good for understanding the process! 
+
+<img src="images/iPhoneVsNote.png" title="iPhoneSentiments" alt="iPhone" height="400px" width="810" style="display: block; margin: 10px;"/>
+<br>
+***iphoneX was launched on Sep 12, 2017** and it went on sale sometime on Nov'17. Galaxy Note8 was already out a few months before iPhoneX.
+
+<a href="iPhonexVsNote.html">
+![contnue reading..]
+</a>
+
+<br>
+
+## Sentiment Analysis of cryptocurrencies
+
+There has been so much buzz about Crypto Currencies and their long-term validity these days. The world has been divided on the credibility of the Crypto Currency as an authentic investment. Some countries have even gone to the extent of banning the trade of Crypto Currencies. Let's explore what Twitterati think about this phenomenon. 
+
+Based on the data available at **[Cryptocurrency Market Capitalizations](https://coinmarketcap.com/)**, top three Crypto Currencies with highest market capitalization were selected for analysis.
+
+<img src="images/cryptowordcloud.png" title="Weather" alt="Weather" height="800px" width="800" style="display: block; margin: auto;"/>
+<br>
+
+Following three Crypto Currencies were selected-
+
+* **Bitcoin (BTC)**
+* **Ripple (XRP)**
+* **Ethereum (ETH)**
+
+<a href="cyptocurrrency.html">
+![contnue reading..]
+</a>
+<br>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145405323-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145405323-1');
+</script>
+</head>
