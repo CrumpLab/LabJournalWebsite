@@ -1,0 +1,48 @@
+---
+title: "Working Papers & Research Articles"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+## **Journals**  
+
+
+#### — Bolivar, O. (2024). **"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**. *Latin American Journal of Central Banking* (Revised and invited to resubmit)
+
+#### — Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
+
+#### — Bolivar, O. (2022). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). First Place in the call for papers of the 15th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia (*Forthcoming publication in the Revista de Análisis del Banco Central de Bolivia*).
+
+#### —  Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/multiplicadores.pdf). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
+
+#### —  Bolivar, O. (2021). [**"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"**](https://repositorio.economiayfinanzas.gob.bo/documentos/2018/UAEF/CIEB/ii_Art%C3%ADculos/Volumen%20IV/Numero%202/V4N2_Paper2.pdf.pdf). *Cuadernos de Investigación Económica Boliviana*, 4(2): 53-95.
+
+#### —  Bolivar, O. (2016). [**"Bolivianization and Effectiveness of the Monetary Policy"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/ii_Articulos/Volumen_1/Numero_2/Ingles/CIEB_2016_Ing_Paper_2.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(2): 55-98.
+
+#### —  Bolivar, O. & D. Ugarte (2015). [**"Domestic Demand as Engine of the Economic Growth in Bolivia"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper1_Bolivian_Economic.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(1): 7-44. 
+
+#### —  Ugarte, D. & Bolivar, O. (2015). [**"The Effect of Income Redistribution on Poverty Reduction of Bolivia"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper_2_Bolivian_Economic.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(1): 45-80. 
+
+#### —  Ugarte, D. & Bolivar, O. (2015). [**"La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica"**](https://www.bcb.gob.bo/webdocs/publicacionesbcb/revista_analisis/ra_vol22/articulo_1_v22.pdf). *Revista de Análisis del Banco Central de Bolivia*, 22(1): 9-40.   
+
+
+
+
+## **Working papers**   
+
+
+#### — Bolivar, O. (2023). [**"Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección"**](https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf). MPRA Paper from University Library of Munich. 
+
+#### —  Bolivar, O. (2022). [**"Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure"**](https://scioteca.caf.com/handle/123456789/1910). Research Department Working Papers 1910, CAF - Development Bank of Latin America.
+
+#### —  Bolivar, O. (2020). [**"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/libro_caf_paper1-comprimido.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+
+#### —  Bolivar, O. & Ugarte, D. (2020). [**"Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/libro_caf_paper2.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+
+#### —  Ugarte, D. & Bolivar, O. (2019). [**"Descentralización en Bolivia: eficacia y externalidades"**](http://www.inesad.edu.bo/pdf/wp2018/wp06_2018.pdf). CAF-INESAD-ABCE (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168). La Paz, Bolivia.
+
+#### —  Bolivar, O. (2017). [**"Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio"**](https://eeb.bcb.gob.bo/sites/default/files/programa/Osmar_Bolivar_1310_TC_P1.pdf). Research paper presented at the 10th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia.
+

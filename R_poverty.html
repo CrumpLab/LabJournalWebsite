@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Combining Machine Learning and Remote-sensing to predict Community-level Poverty in Bolivia</title>
+
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<meta name="description" content="Turn your analyses into high quality documents, reports, presentations and dashboards with R Markdown. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL. R Markdown supports a reproducible workflow for dozens of static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides, Tufte-style handouts, books, dashboards, shiny applications, scientific articles, websites, and more." />
+
+<script type="text/javascript" src="js/redirect.js"></script>
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<!-- Google Tag Manager -->
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHBDBW7');</script>
+ <!-- End Google Tag Manager -->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHBDBW7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">My Website</a>
+      <div class="rStudio"><span class="light">Osmar Bolivar</span></div>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="index.html">Home</a>
+        <a class="menuItem" href="portfolio.html">My Portfolio</a>
+        <a class="menuItem" href="Papers.html">Papers</a>
+        <a class="menuItem" href="Papers.html">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Combining Machine Learning and Remote-sensing to predict Community-level Poverty in Bolivia</h1>
+
+</div>
+
+
+<p>In the vast tapestry of Bolivia’s evolving socioeconomic landscape, understanding the dynamics of poverty at the community level is of paramount importance. To decipher the threads of change that weave through these communities, I have developed a methodology (click <a href="https://ideas.repec.org/p/pra/mprapa/118932.html"><strong>here</strong></a> to download working paper) that combines machine learning and remote sensing. The objective? To forecast the poverty headcount ratio for the year 2022 and draw comparisons with the state of affairs in 2012 at the community level.</p>
+<div id="unveiling-the-methodology-a-meld-of-data-and-technology" class="section level3">
+<h3>Unveiling the Methodology: A Meld of Data and Technology</h3>
+<p>The journey begins with the meticulous assembly of data from the 2012 Census, serving as the bedrock for constructing a poverty indicator based on Unsatisfied Basic Needs (UBN) at the community level. With 953 communities, each boasting a population exceeding 500 inhabitants, as the units of observation, the study takes a deep dive into the world of remote sensing. Here, data drawn from sources like nighttime luminosity, urban areas, road density, and power grids intersect with human-made markers like banks, schools, and hospitals, among others.</p>
+<p>The heartbeat of this research is machine learning algorithms, which are nurtured with Census and remote-sensed data for training and validation. The ultimate goal? To predict the UBN poverty headcount ratio for both 2012 and forecast it for 2022. This fusion of predictive prowess and the vast potential of remote sensing heralds an innovative lens through which we can witness the evolution of community-level poverty in Bolivia.</p>
+</div>
+<div id="the-power-of-machine-learning-key-insights" class="section level3">
+<h3>The Power of Machine Learning: Key Insights</h3>
+<p>The study begins by fine-tuning eight machine learning algorithms using a 10-fold cross-validation approach. What emerges is that algorithms capturing non-linear relationships between the poverty headcount ratio and its predictors outshine those focusing on linear associations. In this category, stars include AdaBoost, Gradient Boosting, Random Forest, and Extra Trees. This optimization process isn’t just a technical exercise; it enhances the predictive and generalization capabilities of these models (Figure 1).</p>
+</div>
+<div id="remote-sensings-role-in-poverty-prediction" class="section level3">
+<h3>Remote Sensing’s Role in Poverty Prediction</h3>
+<p>Our journey doesn’t end with algorithms; it extends into the realm of remote sensing. The study unravels the relevance of variables generated through remote sensing in predicting community-level poverty headcount ratios. Among these, the number of banks and schools in each community emerges as the most influential. These factors are closely followed by indicators such as the extent of urban settlements, built-up areas, and luminosity (Figure 2). These variables are key because they mirror access to financial services, education, infrastructure, economic activity, and population concentration ––all pivotal elements in a community’s socioeconomic well-being.</p>
+</div>
+<div id="changing-faces-of-poverty-2012-vs.-2022" class="section level3">
+<h3>Changing Faces of Poverty: 2012 vs. 2022</h3>
+<p>The study unfurls the shifting contours of poverty, unveiling a significant transformation between 2012 and 2022. On the whole, there’s a downward trend in the number of people living in poverty across the analyzed communities compared to 2012. However, the real standout here is that nearly 50% of these communities in 2022 would witness a UBN poverty headcount ratio below the 42.5% threshold. This marks a remarkable improvement of 14.2 percentage points from 2012, considering that the median poverty incidence based on 2012 data stood at 56.7%. Delving deeper into the projected poverty headcount ratio distribution, a considerable reduction emerges, especially in the first quartile, indicating a positive change in the socioeconomic conditions of these communities during this decade (Figure 3).</p>
+</div>
+<div id="from-disparity-to-development-an-intriguing-pattern" class="section level3">
+<h3>From Disparity to Development: An Intriguing Pattern</h3>
+<p>The data paints an intriguing picture of varying degrees of poverty reduction among communities, based on their initial poverty levels in 2012. What stands out is that communities starting from a lower poverty threshold in 2012 (below 60%) have seen more significant reductions in poverty incidence (Figure 4). This could be due to a threshold phenomenon, where communities with initial poverty levels below 60% have crossed a developmental threshold, fostering poverty reduction through economic opportunities and existing infrastructure. On the flip side, communities that began with higher poverty levels (60% or more) experienced more moderate reductions, likely due to deeper-rooted structural challenges demanding long-term, multifaceted interventions.</p>
+</div>
+<div id="regional-disparities-and-the-road-ahead" class="section level3">
+<h3>Regional Disparities and the Road Ahead</h3>
+<p>An in-depth examination also spotlights regional disparities in poverty headcount ratio reduction rates. The department of Santa Cruz emerges as a success story, displaying the most substantial decrease in median poverty headcount ratio. In contrast, departments like Oruro and La Paz show more moderate reductions, indicating structural challenges that demand tailored policies (Figure 5). A localized approach, involving collaboration between governmental bodies, NGOs, and the local community, is essential for designing and implementing strategies that address the unique needs of each department and promote equitable development.</p>
+</div>
+<div id="mapping-the-path-of-progress" class="section level3">
+<h3>Mapping the Path of Progress</h3>
+<p>The research culminates in maps (Figures 6 and 7) that offers a detailed glimpse into the trends of poverty reduction in the 953 communities studied between 2012 and 2022. The clustering of communities with significant progress in poverty reduction near urban centers reflects the positive impact of proximity to economic hubs. However, the variations also spotlight inequalities in local resources, infrastructure investments, and quality of life. Tailored development strategies are crucial to bridge these gaps.</p>
+</div>
+<div id="urban-vs.-rural-contrasting-realities" class="section level3">
+<h3>Urban vs. Rural: Contrasting Realities</h3>
+<p>The study’s geospatial analysis brings to light the stark contrast between urban and rural areas. Capital cities and their surroundings shine as areas with the lowest poverty rates. However, rural regions, especially highland areas and Cochabamba, grapple with higher poverty rates. The data highlights 68 communities where over 90% of the population lives in poverty, emphasizing economic and developmental disparities. The study underlines the necessity for policies targeting regional inequalities and promoting equitable development.</p>
+</div>
+<div id="guiding-lights-for-the-future" class="section level3">
+<h3>Guiding Lights for the Future</h3>
+<p>The study offers guiding lights for crafting a path towards sustainable poverty reduction. It emphasizes the need for comprehensive approaches that address both economic and social aspects. Investing in infrastructure, education, and healthcare services serves as the bedrock for laying the foundation for sustainable development. Training and empowerment programs are pivotal, strengthening local skills and productivity, increasing economic opportunities, and reducing vulnerability. Fostering local employment and investments is essential for rekindling economic growth. Above all, tailored policies catering to each community’s unique challenges are imperative.</p>
+</div>
+<div id="a-lesson-in-predictive-power" class="section level3">
+<h3>A Lesson in Predictive Power</h3>
+<p>One of the most striking aspects of this research is the strength of the machine learning algorithms in predicting community-level poverty incidence. In some cases, their performance surpasses what’s been observed in previous high-profile research. This emphasizes the effectiveness of the methodology and showcases the potential of geospatial data and machine learning algorithms in predicting poverty.</p>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">Should you require additional information, please do not hesitate to reach out to me.</div>
+  <div id="logos">
+    <a href="https://github.com/osmarbolivar" class="footerLogo gitHub"></a>
+    <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/" class="footerLogo linkedIn"></a>
+  </div>
+</div>
+</div>
+
+<!-- bizible -->
+<script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+<!-- disqus -->
+<div id="disqus_thread" class="standardPadding"></div>
+<script type="text/javascript" src="js/disqus.js"></script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript" src="js/external-links.js"></script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

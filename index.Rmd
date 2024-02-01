@@ -1,0 +1,77 @@
+---
+title: "My Website - Osmar Bolivar"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+
+```{js, echo=FALSE}
+$("#rStudioHeader").removeClass("alwaysShrunk");
+$("#pageContent").removeClass("standardPadding");
+```
+
+
+<!--html_preserve-->
+
+<div id="homeContent">
+  <div class="band full orange first rightText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div class="tagline">A Little About Myself.</div>
+        <div>Passionate about leveraging quantitative analysis to drive impactful insights in economics. Proficient in econometrics, machine learning and remote sensing for cutting-edge socioeconomic analysis. Eager to perpetuate the fusion of data and policy for meaningful societal impact.</div>
+      </div>
+      <div class="actions">
+        <div><a href="portfolio.html"><button class="bigButton getStarted">Learn more</button></a></div>
+        </div>
+    </div>
+    <img class="imageOne" src="images/profile-circle_pic.png"/>
+  </div>
+
+  <div class="band full gray1 second leftText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div>
+        Explore a repository of empirical evidence and technical insights designed to foster in-depth exploration and dialogue on the structural and conjunctural aspects of Bolivia's economy and global regions. This platform aspires to offer content that not only serves academic investigation but also proves instrumental in the formulation of data-driven policies.
+        </div>
+        <div class="actions">
+        <div><a href="portfolio.html"><button class="bigButton gallery">My Portfolio</button></a></div>
+        </div>
+      </div>
+    </div>
+    <img class="imageTwo" src="images/images_for_band2.png"/>
+  </div>
+
+  <div class="band full third rightText">
+    <img class="imageThree" src="images/papers_for_bands.png"/>
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div>
+        Uncover the depth of my research through academic journals and working papers, each offering a meticulous exploration of economic phenomena.
+        </div>
+        <div class="actions">
+          <div><a href="Papers.html"><button class="bigButton gallery">Journal/Working Papers</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="band full gray2 fourth leftText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div class="tagline">Get in touch.</div>
+        <div>Should you require additional information, please do not hesitate to reach out to me.</div> 
+        <div><a href="osmar.economics@gmail.com"><img src="images/icon_gmail.svg" alt="Gmail" style="width:40px; height:40px; margin-right: 10px;"></a></div>
+        <div><a href="https://www.linkedin.com/in/osmar-bolivar-rosales/"><img src="images/linkedin-logo.png" alt="LinkedIn" style="width:40px; height:40px; margin-right: 10px;"></a></div> 
+        <div><a href="https://github.com/osmarbolivar/"><img src="images/github_logo.png" alt="GitHub" style="width:40px; height:40px; margin-right: 10px;"></a></div>
+        <div><a href="https://orcid.org/0009-0002-2297-2217"><img src="images/orcid.svg" alt="ORCID" style="width:40px; height:40px; margin-right: 10px;"></a></div>
+        <div><a href="https://ideas.repec.org/f/pbo932.html"><img src="images/ideaslogo.jpg" alt="Ideas" style="width:100px; height:40px; margin-right: 10px;"></a></div>
+      </div>
+    </div>
+    <img class="imageFour" src="images/social_network.png"/>
+  </div>
+</div>
+
+<!--/html_preserve-->

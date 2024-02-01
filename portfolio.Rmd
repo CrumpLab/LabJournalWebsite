@@ -1,0 +1,68 @@
+---
+title: "My Portfolio"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+<!--html_preserve-->
+
+<div class="band full">
+  <div class="bandContent pageTitle">My Portfolio</div>
+  <div class="bandContent pageIntro">Repository of empirical evidence and technical insights.</div>
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle">Research</div>
+    <div class="galleryIntro">Embark on an academic voyage through empirical studies, econometric analyses, and impactful insights in the Research section. Uncover the intricacies of socioeconomic phenomena and contribute to the broader academic dialogue.</div>
+    <div class="galleryItems">
+      <div class="galleryItem">
+        <a href="R_poverty.html"><img class="galleryItemImage" src="images/poverty_2.png"/></a>
+        <a href="http://timelyportfolio.github.io/rCharts_nyt_home_price/" class="galleryItemLabel">Community-level Poverty Map</a>
+        <div class="galleryItemDescription">How community-level poverty evolved between 2012 and 2022.</div>
+      </div>
+      <div class="galleryItem">
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/article-example/svm-rmarkdown-article-example.pdf"><img class="galleryItemImage" src="images/multipliers.png"/></a>
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/article-example/svm-rmarkdown-article-example.pdf" class="galleryItemLabel">Growth-and-employment Enhancing Activities</a>
+        <div class="galleryItemDescription">How can we prioritize economic activities to foster growth and job creation, while making the most of limited resources?.</div>
+      </div>
+      <div class="galleryItem">
+        <img class="galleryItemImage" src="images/built_up_areas.png"/>
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/tree/master/word-example" class="galleryItemLabel">Bolivia's Built-up areas</a>
+        <div class="galleryItemDescription">Download Bolivia's 2022 Built-Up Classification.</div>
+      </div>
+      <div class="galleryItem">
+        <a href="https://rstudio.github.io/tufte/"><img class="galleryItemImage" src="images/NightLights.png"/></a>
+        <a href="https://rstudio.github.io/tufte/" class="galleryItemLabel">Night Lights and GDP</a>
+        <div class="galleryItemDescription">How Night Lights are used to appoach GDP.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle">Dashboards</div>
+    <div class="galleryIntro">Immerse yourself in dynamic data visualization. The Dashboards section transforms complex economic data into engaging visuals, offering insightful perspectives on various economic dimensions.</div>
+    <div class="galleryItems">
+      <div class="galleryItem">
+        <a href="https://rpubs.com/jcheng/leaflet-layers-example"><img class="galleryItemImage" src="images/mapa_bol.png"/></a>
+        <a href="https://rpubs.com/jcheng/leaflet-layers-example" class="galleryItemLabel">Bolivia: Macro indicators</a>
+        <div class="galleryItemDescription">GDP, inflation, unemployment and others..</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle">Articles</div>
+    <div class="galleryIntro">Explore thought-provoking narratives in the Articles section. From in-depth analyses of structural matters to timely reflections on economic events, each article contributes to informed discussions in the realm of economics.</div>
+    <div class="galleryItems">
+      <div class="galleryItem">
+        <a href="https://bookdown.org/yihui/bookdown/"><img class="galleryItemImage" src="images/gdp_decomp.png"/></a>
+        <a href="https://bookdown.org/yihui/bookdown/" class="galleryItemLabel">Early childhood education.</a>
+        <div class="galleryItemDescription">How Early childhood determines success?.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--/html_preserve-->
