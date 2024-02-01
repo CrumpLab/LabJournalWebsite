@@ -52,7 +52,7 @@ $("#pageContent").removeClass("standardPadding");
         Uncover the depth of my research through academic journals and working papers, each offering a meticulous exploration of economic phenomena.
         </div>
         <div class="actions">
-          <div><a href="Papers.html"><button class="bigButton gallery">Journal/Working Papers</button></a></div>
+          <div><a href="Papers.html"><button class="bigButton getStarted">Journal/Working Papers</button></a></div>
         </div>
       </div>
     </div>
@@ -63,11 +63,10 @@ $("#pageContent").removeClass("standardPadding");
       <div class="blurb">
         <div class="tagline">Get in touch.</div>
         <div>Should you require additional information, please do not hesitate to reach out to me.</div> 
-        <div><a href="osmar.economics@gmail.com"><img src="images/icon_gmail.svg" alt="Gmail" style="width:40px; height:40px; margin-right: 10px;"></a></div>
+        <div><a href="osmar.economics@gmail.com"><img src="images/icon_gmail.svg" alt="Gmail" style="width:40px; height:40px; margin-right: 10px;">osmar.economics@gmail.com</a></div>
         <div><a href="https://www.linkedin.com/in/osmar-bolivar-rosales/"><img src="images/linkedin-logo.png" alt="LinkedIn" style="width:40px; height:40px; margin-right: 10px;"></a></div> 
         <div><a href="https://github.com/osmarbolivar/"><img src="images/github_logo.png" alt="GitHub" style="width:40px; height:40px; margin-right: 10px;"></a></div>
         <div><a href="https://orcid.org/0009-0002-2297-2217"><img src="images/orcid.svg" alt="ORCID" style="width:40px; height:40px; margin-right: 10px;"></a></div>
-        <div><a href="https://ideas.repec.org/f/pbo932.html"><img src="images/ideaslogo.jpg" alt="Ideas" style="width:100px; height:40px; margin-right: 10px;"></a></div>
       </div>
     </div>
     <img class="imageFour" src="images/social_network.png"/>

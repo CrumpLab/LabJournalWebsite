@@ -461,7 +461,7 @@ p {
 }
 
 #homeContent .band.orange {
-  background-color: #fc5a33;
+  background-color: #ff890e;
   color: #fff;
 }
 
@@ -502,12 +502,17 @@ p {
 
 #homeContent .bigButton.gallery {
   color: #fff;
-  background-color: #8cb06c;
+  background-color: #8fb538;
 }
 
 #homeContent .bigButton.getStarted {
   color: #fff;
-  background-color: #e2b857;
+  background-color: #e1b877;
+}
+
+#homeContent .bigButton.papers {
+  color: #fff;
+  background-color: #32bced;
 }
 
 #rStudioFooter {
@@ -520,7 +525,7 @@ p {
 
 #rStudioFooter.band {
 
-  background-color: #e6553a;
+  background-color: #ff890e;
   padding: 30px 5%;
 
   color: #fff;
